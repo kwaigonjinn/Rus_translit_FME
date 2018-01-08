@@ -1,46 +1,56 @@
 import string
+import fme
+import fmeobjects
 
- 
+# WARNING create Tester transformer to exclude empty values of tranliterated attribute before PythonCaller, otherwise, translation return an error    
 
-def Translite(value):
+def Translite(feature):
 
-    #Создаём словарь
+    #creating the dictionary
 
-    has = {u'А':'A',u'а':'a',u'Б':'B', u'б':'b', u'В':'V', u'в':'v', u'Г':'G', u'г':'g', u'Д':'D', u'д':'d', u'Е':'E', u'е':'e', u'Ё':'E', u'ё':'e', u'Ж':'ZH', u'ж':'zh', u'З':'Z', u'з':'z', u'И':'I', u'и':'i', u'Й':'Y', u'й':'y', u'К':'K', u'к':'k', u'Л':'L', u'л':'l', u'М':'M', u'м':'m', u'Н':'N', u'н':'n', u'О':'O', u'о':'o', u'П':'P', u'п':'p', u'Р':'R', u'р':'r', u'С':'S', u'с':'S', u'Т':'T', u'т':'t', u'У':'U', u'у':'u', u'Ф':'F', u'ф':'f', u'Х':'KH', u'х':'kh', u'Ц':'TS', u'ц':'ts', u'Ч':'CH', u'ч':'ch', u'Ш':'SH', u'ш':'sh', u'Щ':'SHCH', u'щ':'shch', u'Ы':'Y', u'ы':'y', u'Э':'E', u'э':'e', u'Ю':'YU', u'ю':'yu', u'Я':'YA', u'я':'ay', u'Ъ':'', u'ъ':'', u'Ь':'', u'ь':''}
+    has = {'А':'A','а':'a','Б':'B', 'б':'b', 'В':'V', 'в':'v', 'Г':'G', 'г':'g', 'Д':'D', 'д':'d', 'Е':'E', 'е':'e', 'Ё':'E', 'ё':'e', 'Ж':'Zh', 'ж':'zh', 'З':'Z', 'з':'z', 'И':'I', 'и':'i', 'Й':'Y', 'й':'y', 'К':'K', 'к':'k', 'Л':'L', 'л':'l', 'М':'M', 'м':'m', 'Н':'N', 'н':'n', 'О':'O', 'о':'o', 'П':'P', 'п':'p', 'Р':'R', 'р':'r', 'С':'S', 'с':'s', 'Т':'T', 'т':'t', 'У':'U', 'у':'u', 'Ф':'F', 'ф':'f', 'Х':'Kh', 'х':'kh', 'Ц':'Ts', 'ц':'ts', 'Ч':'Ch', 'ч':'ch', 'Ш':'Sh', 'ш':'sh', 'Щ':'Shch', 'щ':'shch', 'Ы':'Y', 'ы':'y', 'Э':'E', 'э':'e', 'Ю':'Y', 'ю':'y', 'Я':'Ya', 'я':'ya', 'Ъ':"'", 'ъ':"'", 'Ь':"'", 'ь':"'"}
+    
+    #write input data to 't_Val'
+    t_Val=feature.getAttribute('input_attribite')
+    
+    #replace multiple whitespaces with single
+    t_Val=" ".join(t_Val.split())
+    
+    #trim
+    t_Val=t_Val.strip()
+    
+    #replace её after ьъ
+    t_Val=t_Val.replace('ье','ye')
 
-    #Замена её после ьъ
+    t_Val=t_Val.replace('ьё','ye')
 
-    t_Val=value.replace(u'ье',u'ye')
+    t_Val=t_Val.replace('ьЁ','YE')
 
-    t_Val=t_Val.replace(u'ьё',u'ye')
+    t_Val=t_Val.replace('ьЕ','YE')
 
-    t_Val=t_Val.replace(u'ьЁ',u'YE')
+    #Replace in line Е and Ё if they appears in line 
 
-    t_Val=t_Val.replace(u'ьЕ',u'YE')
-
-    #Заменяем в строке Е и Ё для начало слова
-
-    str_j=t_Val.split(u' ')
+    str_j=t_Val.split(' ')
 
     t_Val=''
 
-    for item  in str_j:
+    for item in str_j:
 
-        if (item[0]==u'е' or item[0]==u'ё'):
+        if (item[0]=='е' or item[0]=='ё'):
 
-            t_Val=t_Val+u'ye'+item[1:]
+            t_Val=t_Val+'ye'+item[1:]
 
-        elif (item[0]==u'Е' or item[0]==u'Ё'):
+        elif (item[0]=='Е' or item[0]=='Ё'):
 
-            t_Val=t_Val+u'YE'+item[1:]
+            t_Val=t_Val+'YE'+item[1:]
 
         else:
 
-            t_Val=t_Val+item
+            t_Val=t_Val+item[:]
 
-        t_Val=t_Val+u' '
+        t_Val=t_Val+' '
 
-    #Разбираем строку
+    #build result string
 
     res=''
 
@@ -53,3 +63,7 @@ def Translite(value):
         else:
 
             res=res+char
+            
+    #put data in latin from 'res' to the new attribute         
+    feature.setAttribute('output_attribute', res)
+    
