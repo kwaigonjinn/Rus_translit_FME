@@ -1,0 +1,1043 @@
+#! <?xml version="1.0" encoding="UTF-8" ?>
+#! <WORKSPACE
+#    
+#    
+#    Command-line to run this workspace:
+#    
+#    
+#    "C:\Program Files\FME\fme.exe" "C:\Users\wole1\OneDrive\Работа\FME\Transliterate test.fmw"
+#          --SourceDataset_XLSXR "C:\Users\wole1\Desktop\bankomat_all_27.10.2017.xls"
+#          --SourceDataset_XLSXR_4 "http://www.gazprombank.ru/atm/downloads/bankomat_all_29.12.2017.xls"
+#    
+#    
+#!   REDIRECT_TERMINATORS="NONE"
+#!   DESTINATION_ROUTING_FILE=""
+#!   LOG_FILE=""
+#!   USAGE=""
+#!   FME_BUILD_NUM="17539"
+#!   SHOW_ANNOTATIONS="true"
+#!   TERMINATE_REJECTED="YES"
+#!   CATEGORY=""
+#!   FME_GEOMETRY_HANDLING="Enhanced"
+#!   DESTINATION="NONE"
+#!   FME_IMPLICIT_CSMAP_REPROJECTION_MODE="Auto"
+#!   PASSWORD=""
+#!   LAST_SAVE_BUILD="FME(R) 2017.1.0.0 (20170731 - Build 17539 - WIN64)"
+#!   ATTR_TYPE_ENCODING="SDF"
+#!   ZOOM_SCALE="81"
+#!   IGNORE_READER_FAILURE="No"
+#!   SHOW_INFO_NODES="true"
+#!   HISTORY=""
+#!   END_PYTHON=""
+#!   DESCRIPTION=""
+#!   PYTHON_COMPATIBILITY="27"
+#!   LOG_MAX_RECORDED_FEATURES="200"
+#!   WORKSPACE_VERSION="1"
+#!   USE_MARKDOWN=""
+#!   END_TCL=""
+#!   WARN_INVALID_XFORM_PARAM="Yes"
+#!   TITLE=""
+#!   DOC_EXTENTS="3532.12 1199.41"
+#!   MAX_LOG_FEATURES="200"
+#!   FME_DOCUMENT_PRIORGUID="9382d96f-0480-4e20-83e1-e586c417215b,2ab1a730-ac6f-4ce3-95c1-868cae2a1777,90a2eced-49f6-48db-b15c-bc9389e316b7,3d23323b-c798-4f1a-a5d4-7f45973a2fcc,9749bb05-bdd3-488b-9b0f-09380fd021de,a3ad9aea-0fb5-43e9-a645-f129753ec3cf,5f69a67a-a3af-4034-8aff-cf41e0764fd2,234dc6af-8874-48dc-a3b1-b530dff21d49"
+#!   VIEW_POSITION="-1084.12 177.471"
+#!   FME_DOCUMENT_GUID="ec0fc66d-0dcc-44d2-8039-e10cd8fb3b6b"
+#!   SOURCE_ROUTING_FILE=""
+#!   MARKDOWN_DESCRIPTION=""
+#!   LAST_SAVE_DATE="2018-01-03T01:20:06"
+#!   MULTI_WRITER_DATASET_ORDER="BY_ID"
+#!   SOURCE="NONE"
+#!   BEGIN_PYTHON=""
+#!   EXPLICIT_BOOKMARK_ORDER="false"
+#!   FME_REPROJECTION_ENGINE="FME"
+#!   MARKDOWN_USAGE=""
+#!   DOC_TOP_LEFT="-1087.88 -1111.12"
+#!   FME_STROKE_MAX_DEVIATION="0"
+#!   BEGIN_TCL=""
+#!   FME_SERVER_SERVICES=""
+#! >
+#! <DATASETS>
+#! <DATASET
+#!   IS_SOURCE="true"
+#!   ROLE="READER"
+#!   FORMAT="XLSXR"
+#!   DATASET="$(SourceDataset_XLSXR)"
+#!   KEYWORD="XLSXR_2"
+#!   MULTI_GEOM_ALLOWED="false"
+#!   ATTR_MAX_LENGTH="0"
+#!   ATTR_CASE="ANY"
+#!   ALLOWED_FEAT_TYPES=""
+#!   WRITE_DEFS="true"
+#!   DEFLINE_TEMPLATE="xlsx_start_row &quot;&quot; xlsx_end_row &quot;&quot;"
+#!   DEFLINE_ATTRS="true"
+#!   EXPOSABLE_ATTRS="fme_sweep_angle number(31,15) multi_reader_id number(11,0) multi_reader_full_id number(11,0) fme_basename char(50) fme_start_angle number(31,15) fme_rotation number(31,15) fme_text_size number(31,15) multi_reader_keyword char(50) fme_dataset char(50) fme_secondary_axis number(31,15) fme_fill_color char(50) fme_color char(50) fme_primary_axis number(31,15) fme_feature_type char(50) multi_reader_type char(50) fme_text_string char(50) fme_geometry fme_char(50) xlsx_row_id number(11,0) fme_type char(50)"
+#!   DEFLINE_PARMS="&quot;GUI OPTIONAL NAMEDGROUP xlsx_table_settings_group xlsx_start_row%xlsx_end_row Table&quot; &quot;&quot; &quot;GUI FORCE_DEFS OPTIONAL INTEGER xlsx_start_row Start Row:&quot; &quot;&quot; &quot;GUI FORCE_DEFS OPTIONAL INTEGER xlsx_end_row End Row:&quot; &quot;&quot; "
+#!   ATTR_INDEX_TYPES=""
+#!   ATTR_NAME_INVALID_CHARS=""
+#!   SUPPORTS_FEATURE_TYPE_FANOUT="true"
+#!   ENABLED="true"
+#!   DYNAMIC_FEATURE_TYPES_LIST_ON_MERGE="true"
+#!   DATASET_TYPE="FILE"
+#!   GENERATE_FME_BUILD_NUM="17539"
+#!   FEATURE_TYPES=""
+#!   COORDSYS=""
+#!   MAX_FEATURES=""
+#!   START_FEATURE=""
+#!   MAX_FEATURES_PER_FEATURE_TYPE=""
+#!   MIN_FEATURES=""
+#! >
+#! <METAFILE_PARAMETER
+#!   NAME="READER_DATASET_HINT"
+#!   VALUE="Select the Excel file(s)"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="ATTRIBUTE_READING"
+#!   VALUE="DEFLINE"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="ALLOW_DATASET_CONFLICT"
+#!   VALUE="YES"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="ADVANCED_PARMS"
+#!   VALUE="XLSXR_IN_READ_BLANK_AS XLSXR_IN_EXPAND_MERGED_CELLS XLSXR_IN_SCAN_SCHEMA_IF_DYNAMIC"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="FEATURE_TYPE_NAME"
+#!   VALUE="Sheet"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="MIME_TYPE"
+#!   VALUE="application/vnd.ms-excel ADD_DISPOSITION"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="DATASET_NAME"
+#!   VALUE="xlsx file"
+#! />
+#! </DATASET>
+#! <DATASET
+#!   IS_SOURCE="true"
+#!   ROLE="READER"
+#!   FORMAT="XLSXR"
+#!   DATASET="$(SourceDataset_XLSXR_4)"
+#!   KEYWORD="XLSXR_1"
+#!   MULTI_GEOM_ALLOWED="false"
+#!   ATTR_MAX_LENGTH="0"
+#!   ATTR_CASE="ANY"
+#!   ALLOWED_FEAT_TYPES=""
+#!   WRITE_DEFS="true"
+#!   DEFLINE_TEMPLATE="xlsx_start_row &quot;&quot; xlsx_end_row &quot;&quot;"
+#!   DEFLINE_ATTRS="true"
+#!   EXPOSABLE_ATTRS="fme_sweep_angle number(31,15) multi_reader_id number(11,0) multi_reader_full_id number(11,0) fme_basename char(50) fme_start_angle number(31,15) fme_rotation number(31,15) fme_text_size number(31,15) multi_reader_keyword char(50) fme_dataset char(50) fme_secondary_axis number(31,15) fme_fill_color char(50) fme_color char(50) fme_primary_axis number(31,15) fme_feature_type char(50) multi_reader_type char(50) fme_text_string char(50) fme_geometry fme_char(50) xlsx_row_id number(11,0) fme_type char(50)"
+#!   DEFLINE_PARMS="&quot;GUI OPTIONAL NAMEDGROUP xlsx_table_settings_group xlsx_start_row%xlsx_end_row Table&quot; &quot;&quot; &quot;GUI FORCE_DEFS OPTIONAL INTEGER xlsx_start_row Start Row:&quot; &quot;&quot; &quot;GUI FORCE_DEFS OPTIONAL INTEGER xlsx_end_row End Row:&quot; &quot;&quot; "
+#!   ATTR_INDEX_TYPES=""
+#!   ATTR_NAME_INVALID_CHARS=""
+#!   SUPPORTS_FEATURE_TYPE_FANOUT="true"
+#!   ENABLED="true"
+#!   DYNAMIC_FEATURE_TYPES_LIST_ON_MERGE="true"
+#!   DATASET_TYPE="FILE"
+#!   GENERATE_FME_BUILD_NUM="17539"
+#!   FEATURE_TYPES=""
+#!   COORDSYS=""
+#!   MAX_FEATURES=""
+#!   START_FEATURE=""
+#!   MAX_FEATURES_PER_FEATURE_TYPE=""
+#!   MIN_FEATURES=""
+#! >
+#! <METAFILE_PARAMETER
+#!   NAME="READER_DATASET_HINT"
+#!   VALUE="Select the Excel file(s)"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="ATTRIBUTE_READING"
+#!   VALUE="DEFLINE"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="ALLOW_DATASET_CONFLICT"
+#!   VALUE="YES"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="ADVANCED_PARMS"
+#!   VALUE="XLSXR_IN_READ_BLANK_AS XLSXR_IN_EXPAND_MERGED_CELLS XLSXR_IN_SCAN_SCHEMA_IF_DYNAMIC"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="FEATURE_TYPE_NAME"
+#!   VALUE="Sheet"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="MIME_TYPE"
+#!   VALUE="application/vnd.ms-excel ADD_DISPOSITION"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="DATASET_NAME"
+#!   VALUE="xlsx file"
+#! />
+#! </DATASET>
+#! </DATASETS>
+#! <DATA_TYPES>
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="char(width)"
+#!   FME_TYPE="fme_varchar(width)"
+#!   FORMAT="XLSXR"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="char(width)"
+#!   FME_TYPE="fme_varbinary(width)"
+#!   FORMAT="XLSXR"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="char(width)"
+#!   FME_TYPE="fme_char(width)"
+#!   FORMAT="XLSXR"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="char(width)"
+#!   FME_TYPE="fme_binary(width)"
+#!   FORMAT="XLSXR"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="string"
+#!   FME_TYPE="fme_buffer"
+#!   FORMAT="XLSXR"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="string"
+#!   FME_TYPE="fme_binarybuffer"
+#!   FORMAT="XLSXR"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="string"
+#!   FME_TYPE="fme_xml"
+#!   FORMAT="XLSXR"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="string"
+#!   FME_TYPE="fme_json"
+#!   FORMAT="XLSXR"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="datetime"
+#!   FME_TYPE="fme_datetime"
+#!   FORMAT="XLSXR"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="time"
+#!   FME_TYPE="fme_time"
+#!   FORMAT="XLSXR"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="date"
+#!   FME_TYPE="fme_date"
+#!   FORMAT="XLSXR"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="number(31,15)"
+#!   FME_TYPE="fme_real64"
+#!   FORMAT="XLSXR"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="x_coordinate"
+#!   FME_TYPE="fme_real64"
+#!   FORMAT="XLSXR"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="y_coordinate"
+#!   FME_TYPE="fme_real64"
+#!   FORMAT="XLSXR"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="z_coordinate"
+#!   FME_TYPE="fme_real64"
+#!   FORMAT="XLSXR"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="number(15,7)"
+#!   FME_TYPE="fme_real32"
+#!   FORMAT="XLSXR"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="number(11,0)"
+#!   FME_TYPE="fme_int32"
+#!   FORMAT="XLSXR"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="number(11,0)"
+#!   FME_TYPE="fme_uint32"
+#!   FORMAT="XLSXR"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="number(20,0)"
+#!   FME_TYPE="fme_int64"
+#!   FORMAT="XLSXR"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="number(20,0)"
+#!   FME_TYPE="fme_uint64"
+#!   FORMAT="XLSXR"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="number(6,0)"
+#!   FME_TYPE="fme_int16"
+#!   FORMAT="XLSXR"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="number(6,0)"
+#!   FME_TYPE="fme_uint16"
+#!   FORMAT="XLSXR"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="number(4,0)"
+#!   FME_TYPE="fme_int8"
+#!   FORMAT="XLSXR"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="number(4,0)"
+#!   FME_TYPE="fme_uint8"
+#!   FORMAT="XLSXR"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="number(width,decimal)"
+#!   FME_TYPE="fme_decimal(width,decimal)"
+#!   FORMAT="XLSXR"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="boolean"
+#!   FME_TYPE="fme_boolean"
+#!   FORMAT="XLSXR"
+#! />
+#! </DATA_TYPES>
+#! <GEOM_TYPES>
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="xlsx_none"
+#!   FME_TYPE="fme_no_geom"
+#!   FORMAT="XLSXR"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="xlsx_none"
+#!   FME_TYPE="fme_point"
+#!   FORMAT="XLSXR"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="xlsx_point"
+#!   FME_TYPE="fme_point"
+#!   FORMAT="XLSXR"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="xlsx_none"
+#!   FME_TYPE="fme_line"
+#!   FORMAT="XLSXR"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="xlsx_none"
+#!   FME_TYPE="fme_area"
+#!   FORMAT="XLSXR"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="xlsx_none"
+#!   FME_TYPE="fme_text"
+#!   FORMAT="XLSXR"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="xlsx_none"
+#!   FME_TYPE="fme_ellipse"
+#!   FORMAT="XLSXR"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="xlsx_none"
+#!   FME_TYPE="fme_arc"
+#!   FORMAT="XLSXR"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="xlsx_none"
+#!   FME_TYPE="fme_rectangle"
+#!   FORMAT="XLSXR"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="xlsx_none"
+#!   FME_TYPE="fme_rounded_rectangle"
+#!   FORMAT="XLSXR"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="xlsx_none"
+#!   FME_TYPE="fme_collection"
+#!   FORMAT="XLSXR"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="xlsx_none"
+#!   FME_TYPE="fme_surface"
+#!   FORMAT="XLSXR"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="xlsx_none"
+#!   FME_TYPE="fme_solid"
+#!   FORMAT="XLSXR"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="xlsx_none"
+#!   FME_TYPE="fme_raster"
+#!   FORMAT="XLSXR"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="xlsx_none"
+#!   FME_TYPE="fme_point_cloud"
+#!   FORMAT="XLSXR"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="xlsx_none"
+#!   FME_TYPE="fme_feature_table"
+#!   FORMAT="XLSXR"
+#! />
+#! </GEOM_TYPES>
+#! <FEATURE_TYPES>
+#! <FEATURE_TYPE
+#!   IS_SOURCE="true"
+#!   NODE_NAME="Лист1/header"
+#!   FEATURE_TYPE_NAME=""
+#!   FEATURE_TYPE_NAME_QUALIFIER=""
+#!   IS_EDITABLE="false"
+#!   IDENTIFIER="16"
+#!   FEAT_GEOMTYPE="xlsx_none"
+#!   POSITION="-1042.18 -292.501"
+#!   BOUNDING_RECT="-1042.18 -292.501 -1 -1"
+#!   ORDER="5e+14"
+#!   COLLAPSED="true"
+#!   KEYWORD="XLSXR_1"
+#!   PARMS_EDITED="false"
+#!   ENABLED="true"
+#!   HIDDEN_USER_ATTRS=""
+#!   READ_SELECT_ATTRS="true"
+#!   MERGE_FILTER=""
+#!   MERGE_FILTER_TYPE="FILTER_TYPE_GLOB"
+#!   MERGE_FILTER_CASE_SENSITIVE="false"
+#!   DYNAMIC_SCHEMA="false"
+#! >
+#!     <FEAT_ATTRIBUTE ATTR_NAME="Регион, область" ATTR_TYPE="char(14)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="Название населен пункта" ATTR_TYPE="char(25)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="Адрес" ATTR_TYPE="char(160)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="Место расположения" ATTR_TYPE="char(203)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="Вид банкомата" ATTR_TYPE="char(4)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="Режим работы" ATTR_TYPE="char(117)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="Вид карты" ATTR_TYPE="char(41)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="Валюта" ATTR_TYPE="char(14)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="Cash-in" ATTR_TYPE="char(4)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="Обмен валюты" ATTR_TYPE="char(11)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="Координаты - широта" ATTR_TYPE="number(10,6)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="Координаты - долгота" ATTR_TYPE="number(10,6)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="Принадлежность филиалу" ATTR_TYPE="char(43)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <NON_GUI_DEFLINE_PARM VALUE="xlsx_schema_start_row,3;xlsx_schema_end_col,12;xlsx_header_row,2;xlsx_schema_start_col,0;xlsx_schema_end_row,4139"/>
+#!     <DEFLINE_PARM PARM_NAME="xlsx_table_settings_group" PARM_VALUE=""/>
+#!     <DEFLINE_PARM PARM_NAME="xlsx_end_row" PARM_VALUE=""/>
+#!     <DEFLINE_PARM PARM_NAME="xlsx_start_row" PARM_VALUE=""/>
+#! </FEATURE_TYPE>
+#! </FEATURE_TYPES>
+#! <FMESERVER>
+#! </FMESERVER>
+#! <GLOBAL_PARAMETERS>
+#! <GLOBAL_PARAMETER
+#!   GUI_LINE="GUI MULTIFILE SourceDataset_XLSXR Excel_Files(*.xlsx;*.xlsm;*.xls)|*.xlsx;*.xlsm;*.xls|Excel_Workbook_2007(*.xlsx)|*.xlsx|Excel_Macro_Workbook(*.xlsm)|*.xlsm|Excel_Workbook_Pre_2007(*.xls)|*.xls|All_files(*)|* Source Microsoft Excel File(s):"
+#!   DEFAULT_VALUE="C:\Users\wole1\Desktop\bankomat_all_27.10.2017.xls"
+#!   IS_STAND_ALONE="false"
+#! />
+#! <GLOBAL_PARAMETER
+#!   GUI_LINE="GUI MULTIFILE SourceDataset_XLSXR_4 Excel_Files(*.xlsx;*.xlsm;*.xls)|*.xlsx;*.xlsm;*.xls|Excel_Workbook_2007(*.xlsx)|*.xlsx|Excel_Macro_Workbook(*.xlsm)|*.xlsm|Excel_Workbook_Pre_2007(*.xls)|*.xls|All_files(*)|* Source Microsoft Excel File(s):"
+#!   DEFAULT_VALUE="http://www.gazprombank.ru/atm/downloads/bankomat_all_29.12.2017.xls"
+#!   IS_STAND_ALONE="false"
+#! />
+#! </GLOBAL_PARAMETERS>
+#! <COMMENTS>
+#! <COMMENT
+#!   IDENTIFIER="13"
+#!   COMMENT_VALUE="&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;&#10;&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;&#10;p, li { white-space: pre-wrap; }&#10;&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;MS Shell Dlg 2&apos;; font-size:9pt; font-weight:400; font-style:normal;&quot;&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;TEST if address value is empty &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;"
+#!   POSITION="863.051 -129.027"
+#!   TOP_LEFT="863.051 -129.027"
+#!   BOTTOM_RIGHT="1613.05 -179.027"
+#!   BOUNDING_RECT="863.051 -129.027 750 50"
+#!   ORDER="5e+14"
+#!   FOLLOW_ANCHOR="true"
+#!   INFO_NODE="false"
+#!   COLOUR="1,1,0.784314,0.196078"
+#!   SIZE_POLICY="8"
+#!   COMMENT_TYPE="REGULAR"
+#!   ANCHORED_NODE="21"
+#! />
+#! </COMMENTS>
+#! <CONSTANTS>
+#! </CONSTANTS>
+#! <BOOKMARKS>
+#! <BOOKMARK
+#!   IDENTIFIER="11"
+#!   NAME="Transliterate &apos;address&apos; script"
+#!   DESCRIPTION="&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;&#10;&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;&#10;p, li { white-space: pre-wrap; }&#10;&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;MS Shell Dlg 2&apos;; font-size:8.25pt; font-weight:400; font-style:normal;&quot;&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Need to implemented in script:&lt;/p&gt;&#10;&lt;ul style=&quot;margin-top: 0px; margin-bottom: 0px; margin-left: 0px; margin-right: 0px; -qt-list-indent: 1;&quot;&gt;&lt;li style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;charachters SHCH, SH, CH and so on, in the beginning of word&lt;/li&gt;&lt;/ul&gt;&lt;/body&gt;&lt;/html&gt;"
+#!   TOP_LEFT="1504.34 -18.2385"
+#!   BOTTOM_RIGHT="2151.22 -518.739"
+#!   BOUNDING_RECT="1504.34 -18.2385 646.881 500.5"
+#!   STICKY="true"
+#!   COLOUR="0.47451,0.756863,0.921569"
+#!   CONTENTS="7 "
+#! />
+#! <BOOKMARK
+#!   IDENTIFIER="22"
+#!   NAME="Transliteration"
+#!   DESCRIPTION="&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;&#10;&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;&#10;p, li { white-space: pre-wrap; }&#10;&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;MS Shell Dlg 2&apos;; font-size:8.25pt; font-weight:400; font-style:normal;&quot;&gt;&#10;&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;"
+#!   TOP_LEFT="837.2 88.2887"
+#!   BOTTOM_RIGHT="2303.26 -1111.12"
+#!   BOUNDING_RECT="837.2 88.2887 1466.06 1199.41"
+#!   STICKY="true"
+#!   COLOUR="0.741176,0.0156863,0.8"
+#!   CONTENTS="21 13 11 10 7 "
+#! />
+#! <BOOKMARK
+#!   IDENTIFIER="24"
+#!   NAME="Get ATM data"
+#!   DESCRIPTION="&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;&#10;&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;&#10;p, li { white-space: pre-wrap; }&#10;&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;MS Shell Dlg 2&apos;; font-size:8.25pt; font-weight:400; font-style:normal;&quot;&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Download exel file from &lt;/p&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;http://www.gazprombank.ru/atm/downloads/bankomat_all_29.12.2017.xls&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;"
+#!   TOP_LEFT="-1087.88 16.3186"
+#!   BOTTOM_RIGHT="-428.245 -423.501"
+#!   BOUNDING_RECT="-1087.88 16.3186 659.638 439.819"
+#!   STICKY="true"
+#!   COLOUR="0.0627451,0.239216,0.666667"
+#!   CONTENTS="16 "
+#! />
+#! </BOOKMARKS>
+#! <TRANSFORMERS>
+#! <TRANSFORMER
+#!   IDENTIFIER="7"
+#!   TYPE="PythonCaller"
+#!   VERSION="4"
+#!   POSITION="1631.46 -292.501"
+#!   BOUNDING_RECT="1631.46 -292.501 -1 -1"
+#!   ORDER="5e+14"
+#!   PARMS_EDITED="true"
+#!   ENABLED="true"
+#!   LAST_PARM_EDIT="17539"
+#! >
+#!     <OUTPUT_FEAT NAME="OUTPUT"/>
+#!     <FEAT_COLLAPSED COLLAPSED="0"/>
+#!     <XFORM_ATTR ATTR_NAME="region" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="city" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="address" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="place" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="atmType" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="openingHours" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="cardType" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="currency" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="cashIn" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="exchange" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="latitude" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="longitude" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="latin_address" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="HIDE_ATTRIBUTES" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="NEW_ATTRIBUTES" PARM_VALUE="latin_address"/>
+#!     <XFORM_PARM PARM_NAME="PARAMETERS_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="PYTHONSYMBOL" PARM_VALUE="Translite"/>
+#!     <XFORM_PARM PARM_NAME="LIST_ATTRS" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="PythonCaller_2"/>
+#!     <XFORM_PARM PARM_NAME="ADVANCED_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="PYTHONSOURCE" PARM_VALUE="import&lt;space&gt;string&lt;lf&gt;import&lt;space&gt;fme&lt;lf&gt;import&lt;space&gt;fmeobjects&lt;lf&gt;&lt;lf&gt;#&lt;space&gt;WARNING&lt;space&gt;Put&lt;space&gt;Tester&lt;space&gt;transformer&lt;space&gt;to&lt;space&gt;exclude&lt;space&gt;empty&lt;space&gt;values&lt;space&gt;of&lt;space&gt;tranliterated&lt;space&gt;attribute&lt;space&gt;before&lt;space&gt;PythonCaller&lt;comma&gt;&lt;space&gt;otherwise&lt;comma&gt;&lt;space&gt;translation&lt;space&gt;return&lt;space&gt;an&lt;space&gt;error&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;lf&gt;&lt;lf&gt;def&lt;space&gt;Translite&lt;openparen&gt;feature&lt;closeparen&gt;:&lt;lf&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;#&lt;u0421&gt;&lt;u043e&gt;&lt;u0437&gt;&lt;u0434&gt;&lt;u0430&gt;&lt;u0451&gt;&lt;u043c&gt;&lt;space&gt;&lt;u0441&gt;&lt;u043b&gt;&lt;u043e&gt;&lt;u0432&gt;&lt;u0430&gt;&lt;u0440&gt;&lt;u044c&gt;&lt;lf&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;has&lt;space&gt;=&lt;space&gt;&lt;opencurly&gt;&lt;apos&gt;&lt;u0410&gt;&lt;apos&gt;:&lt;apos&gt;A&lt;apos&gt;&lt;comma&gt;&lt;apos&gt;&lt;u0430&gt;&lt;apos&gt;:&lt;apos&gt;a&lt;apos&gt;&lt;comma&gt;&lt;apos&gt;&lt;u0411&gt;&lt;apos&gt;:&lt;apos&gt;B&lt;apos&gt;&lt;comma&gt;&lt;space&gt;&lt;apos&gt;&lt;u0431&gt;&lt;apos&gt;:&lt;apos&gt;b&lt;apos&gt;&lt;comma&gt;&lt;space&gt;&lt;apos&gt;&lt;u0412&gt;&lt;apos&gt;:&lt;apos&gt;V&lt;apos&gt;&lt;comma&gt;&lt;space&gt;&lt;apos&gt;&lt;u0432&gt;&lt;apos&gt;:&lt;apos&gt;v&lt;apos&gt;&lt;comma&gt;&lt;space&gt;&lt;apos&gt;&lt;u0413&gt;&lt;apos&gt;:&lt;apos&gt;G&lt;apos&gt;&lt;comma&gt;&lt;space&gt;&lt;apos&gt;&lt;u0433&gt;&lt;apos&gt;:&lt;apos&gt;g&lt;apos&gt;&lt;comma&gt;&lt;space&gt;&lt;apos&gt;&lt;u0414&gt;&lt;apos&gt;:&lt;apos&gt;D&lt;apos&gt;&lt;comma&gt;&lt;space&gt;&lt;apos&gt;&lt;u0434&gt;&lt;apos&gt;:&lt;apos&gt;d&lt;apos&gt;&lt;comma&gt;&lt;space&gt;&lt;apos&gt;&lt;u0415&gt;&lt;apos&gt;:&lt;apos&gt;E&lt;apos&gt;&lt;comma&gt;&lt;space&gt;&lt;apos&gt;&lt;u0435&gt;&lt;apos&gt;:&lt;apos&gt;e&lt;apos&gt;&lt;comma&gt;&lt;space&gt;&lt;apos&gt;&lt;u0401&gt;&lt;apos&gt;:&lt;apos&gt;E&lt;apos&gt;&lt;comma&gt;&lt;space&gt;&lt;apos&gt;&lt;u0451&gt;&lt;apos&gt;:&lt;apos&gt;e&lt;apos&gt;&lt;comma&gt;&lt;space&gt;&lt;apos&gt;&lt;u0416&gt;&lt;apos&gt;:&lt;apos&gt;Zh&lt;apos&gt;&lt;comma&gt;&lt;space&gt;&lt;apos&gt;&lt;u0436&gt;&lt;apos&gt;:&lt;apos&gt;zh&lt;apos&gt;&lt;comma&gt;&lt;space&gt;&lt;apos&gt;&lt;u0417&gt;&lt;apos&gt;:&lt;apos&gt;Z&lt;apos&gt;&lt;comma&gt;&lt;space&gt;&lt;apos&gt;&lt;u0437&gt;&lt;apos&gt;:&lt;apos&gt;z&lt;apos&gt;&lt;comma&gt;&lt;space&gt;&lt;apos&gt;&lt;u0418&gt;&lt;apos&gt;:&lt;apos&gt;I&lt;apos&gt;&lt;comma&gt;&lt;space&gt;&lt;apos&gt;&lt;u0438&gt;&lt;apos&gt;:&lt;apos&gt;i&lt;apos&gt;&lt;comma&gt;&lt;space&gt;&lt;apos&gt;&lt;u0419&gt;&lt;apos&gt;:&lt;apos&gt;Y&lt;apos&gt;&lt;comma&gt;&lt;space&gt;&lt;apos&gt;&lt;u0439&gt;&lt;apos&gt;:&lt;apos&gt;y&lt;apos&gt;&lt;comma&gt;&lt;space&gt;&lt;apos&gt;&lt;u041a&gt;&lt;apos&gt;:&lt;apos&gt;K&lt;apos&gt;&lt;comma&gt;&lt;space&gt;&lt;apos&gt;&lt;u043a&gt;&lt;apos&gt;:&lt;apos&gt;k&lt;apos&gt;&lt;comma&gt;&lt;space&gt;&lt;apos&gt;&lt;u041b&gt;&lt;apos&gt;:&lt;apos&gt;L&lt;apos&gt;&lt;comma&gt;&lt;space&gt;&lt;apos&gt;&lt;u043b&gt;&lt;apos&gt;:&lt;apos&gt;l&lt;apos&gt;&lt;comma&gt;&lt;space&gt;&lt;apos&gt;&lt;u041c&gt;&lt;apos&gt;:&lt;apos&gt;M&lt;apos&gt;&lt;comma&gt;&lt;space&gt;&lt;apos&gt;&lt;u043c&gt;&lt;apos&gt;:&lt;apos&gt;m&lt;apos&gt;&lt;comma&gt;&lt;space&gt;&lt;apos&gt;&lt;u041d&gt;&lt;apos&gt;:&lt;apos&gt;N&lt;apos&gt;&lt;comma&gt;&lt;space&gt;&lt;apos&gt;&lt;u043d&gt;&lt;apos&gt;:&lt;apos&gt;n&lt;apos&gt;&lt;comma&gt;&lt;space&gt;&lt;apos&gt;&lt;u041e&gt;&lt;apos&gt;:&lt;apos&gt;O&lt;apos&gt;&lt;comma&gt;&lt;space&gt;&lt;apos&gt;&lt;u043e&gt;&lt;apos&gt;:&lt;apos&gt;o&lt;apos&gt;&lt;comma&gt;&lt;space&gt;&lt;apos&gt;&lt;u041f&gt;&lt;apos&gt;:&lt;apos&gt;P&lt;apos&gt;&lt;comma&gt;&lt;space&gt;&lt;apos&gt;&lt;u043f&gt;&lt;apos&gt;:&lt;apos&gt;p&lt;apos&gt;&lt;comma&gt;&lt;space&gt;&lt;apos&gt;&lt;u0420&gt;&lt;apos&gt;:&lt;apos&gt;R&lt;apos&gt;&lt;comma&gt;&lt;space&gt;&lt;apos&gt;&lt;u0440&gt;&lt;apos&gt;:&lt;apos&gt;r&lt;apos&gt;&lt;comma&gt;&lt;space&gt;&lt;apos&gt;&lt;u0421&gt;&lt;apos&gt;:&lt;apos&gt;S&lt;apos&gt;&lt;comma&gt;&lt;space&gt;&lt;apos&gt;&lt;u0441&gt;&lt;apos&gt;:&lt;apos&gt;s&lt;apos&gt;&lt;comma&gt;&lt;space&gt;&lt;apos&gt;&lt;u0422&gt;&lt;apos&gt;:&lt;apos&gt;T&lt;apos&gt;&lt;comma&gt;&lt;space&gt;&lt;apos&gt;&lt;u0442&gt;&lt;apos&gt;:&lt;apos&gt;t&lt;apos&gt;&lt;comma&gt;&lt;space&gt;&lt;apos&gt;&lt;u0423&gt;&lt;apos&gt;:&lt;apos&gt;U&lt;apos&gt;&lt;comma&gt;&lt;space&gt;&lt;apos&gt;&lt;u0443&gt;&lt;apos&gt;:&lt;apos&gt;u&lt;apos&gt;&lt;comma&gt;&lt;space&gt;&lt;apos&gt;&lt;u0424&gt;&lt;apos&gt;:&lt;apos&gt;F&lt;apos&gt;&lt;comma&gt;&lt;space&gt;&lt;apos&gt;&lt;u0444&gt;&lt;apos&gt;:&lt;apos&gt;f&lt;apos&gt;&lt;comma&gt;&lt;space&gt;&lt;apos&gt;&lt;u0425&gt;&lt;apos&gt;:&lt;apos&gt;Kh&lt;apos&gt;&lt;comma&gt;&lt;space&gt;&lt;apos&gt;&lt;u0445&gt;&lt;apos&gt;:&lt;apos&gt;kh&lt;apos&gt;&lt;comma&gt;&lt;space&gt;&lt;apos&gt;&lt;u0426&gt;&lt;apos&gt;:&lt;apos&gt;Ts&lt;apos&gt;&lt;comma&gt;&lt;space&gt;&lt;apos&gt;&lt;u0446&gt;&lt;apos&gt;:&lt;apos&gt;ts&lt;apos&gt;&lt;comma&gt;&lt;space&gt;&lt;apos&gt;&lt;u0427&gt;&lt;apos&gt;:&lt;apos&gt;Ch&lt;apos&gt;&lt;comma&gt;&lt;space&gt;&lt;apos&gt;&lt;u0447&gt;&lt;apos&gt;:&lt;apos&gt;ch&lt;apos&gt;&lt;comma&gt;&lt;space&gt;&lt;apos&gt;&lt;u0428&gt;&lt;apos&gt;:&lt;apos&gt;Sh&lt;apos&gt;&lt;comma&gt;&lt;space&gt;&lt;apos&gt;&lt;u0448&gt;&lt;apos&gt;:&lt;apos&gt;sh&lt;apos&gt;&lt;comma&gt;&lt;space&gt;&lt;apos&gt;&lt;u0429&gt;&lt;apos&gt;:&lt;apos&gt;Shch&lt;apos&gt;&lt;comma&gt;&lt;space&gt;&lt;apos&gt;&lt;u0449&gt;&lt;apos&gt;:&lt;apos&gt;shch&lt;apos&gt;&lt;comma&gt;&lt;space&gt;&lt;apos&gt;&lt;u042b&gt;&lt;apos&gt;:&lt;apos&gt;Y&lt;apos&gt;&lt;comma&gt;&lt;space&gt;&lt;apos&gt;&lt;u044b&gt;&lt;apos&gt;:&lt;apos&gt;y&lt;apos&gt;&lt;comma&gt;&lt;space&gt;&lt;apos&gt;&lt;u042d&gt;&lt;apos&gt;:&lt;apos&gt;E&lt;apos&gt;&lt;comma&gt;&lt;space&gt;&lt;apos&gt;&lt;u044d&gt;&lt;apos&gt;:&lt;apos&gt;e&lt;apos&gt;&lt;comma&gt;&lt;space&gt;&lt;apos&gt;&lt;u042e&gt;&lt;apos&gt;:&lt;apos&gt;Y&lt;apos&gt;&lt;comma&gt;&lt;space&gt;&lt;apos&gt;&lt;u044e&gt;&lt;apos&gt;:&lt;apos&gt;y&lt;apos&gt;&lt;comma&gt;&lt;space&gt;&lt;apos&gt;&lt;u042f&gt;&lt;apos&gt;:&lt;apos&gt;Ya&lt;apos&gt;&lt;comma&gt;&lt;space&gt;&lt;apos&gt;&lt;u044f&gt;&lt;apos&gt;:&lt;apos&gt;ya&lt;apos&gt;&lt;comma&gt;&lt;space&gt;&lt;apos&gt;&lt;u042a&gt;&lt;apos&gt;:&lt;quote&gt;&lt;apos&gt;&lt;quote&gt;&lt;comma&gt;&lt;space&gt;&lt;apos&gt;&lt;u044a&gt;&lt;apos&gt;:&lt;quote&gt;&lt;apos&gt;&lt;quote&gt;&lt;comma&gt;&lt;space&gt;&lt;apos&gt;&lt;u042c&gt;&lt;apos&gt;:&lt;quote&gt;&lt;apos&gt;&lt;quote&gt;&lt;comma&gt;&lt;space&gt;&lt;apos&gt;&lt;u044c&gt;&lt;apos&gt;:&lt;quote&gt;&lt;apos&gt;&lt;quote&gt;&lt;closecurly&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;#put&lt;space&gt;data&lt;space&gt;to&lt;space&gt;&lt;apos&gt;t_Val&lt;apos&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;t_Val=feature.getAttribute&lt;openparen&gt;&lt;apos&gt;address&lt;apos&gt;&lt;closeparen&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;#replace&lt;space&gt;multiple&lt;space&gt;whitespaces&lt;space&gt;with&lt;space&gt;single&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;t_Val=&lt;quote&gt;&lt;space&gt;&lt;quote&gt;.join&lt;openparen&gt;t_Val.split&lt;openparen&gt;&lt;closeparen&gt;&lt;closeparen&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;#trim&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;t_Val=t_Val.strip&lt;openparen&gt;&lt;closeparen&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;#&lt;u0417&gt;&lt;u0430&gt;&lt;u043c&gt;&lt;u0435&gt;&lt;u043d&gt;&lt;u0430&gt;&lt;space&gt;&lt;u0435&gt;&lt;u0451&gt;&lt;space&gt;&lt;u043f&gt;&lt;u043e&gt;&lt;u0441&gt;&lt;u043b&gt;&lt;u0435&gt;&lt;space&gt;&lt;u044c&gt;&lt;u044a&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;t_Val=t_Val.replace&lt;openparen&gt;&lt;apos&gt;&lt;u044c&gt;&lt;u0435&gt;&lt;apos&gt;&lt;comma&gt;&lt;apos&gt;ye&lt;apos&gt;&lt;closeparen&gt;&lt;lf&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;t_Val=t_Val.replace&lt;openparen&gt;&lt;apos&gt;&lt;u044c&gt;&lt;u0451&gt;&lt;apos&gt;&lt;comma&gt;&lt;apos&gt;ye&lt;apos&gt;&lt;closeparen&gt;&lt;lf&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;t_Val=t_Val.replace&lt;openparen&gt;&lt;apos&gt;&lt;u044c&gt;&lt;u0401&gt;&lt;apos&gt;&lt;comma&gt;&lt;apos&gt;YE&lt;apos&gt;&lt;closeparen&gt;&lt;lf&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;t_Val=t_Val.replace&lt;openparen&gt;&lt;apos&gt;&lt;u044c&gt;&lt;u0415&gt;&lt;apos&gt;&lt;comma&gt;&lt;apos&gt;YE&lt;apos&gt;&lt;closeparen&gt;&lt;lf&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;#&lt;u0417&gt;&lt;u0430&gt;&lt;u043c&gt;&lt;u0435&gt;&lt;u043d&gt;&lt;u044f&gt;&lt;u0435&gt;&lt;u043c&gt;&lt;space&gt;&lt;u0432&gt;&lt;space&gt;&lt;u0441&gt;&lt;u0442&gt;&lt;u0440&gt;&lt;u043e&gt;&lt;u043a&gt;&lt;u0435&gt;&lt;space&gt;&lt;u0415&gt;&lt;space&gt;&lt;u0438&gt;&lt;space&gt;&lt;u0401&gt;&lt;space&gt;&lt;u0434&gt;&lt;u043b&gt;&lt;u044f&gt;&lt;space&gt;&lt;u043d&gt;&lt;u0430&gt;&lt;u0447&gt;&lt;u0430&gt;&lt;u043b&gt;&lt;u043e&gt;&lt;space&gt;&lt;u0441&gt;&lt;u043b&gt;&lt;u043e&gt;&lt;u0432&gt;&lt;u0430&gt;&lt;lf&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;str_j=t_Val.split&lt;openparen&gt;&lt;apos&gt;&lt;space&gt;&lt;apos&gt;&lt;closeparen&gt;&lt;lf&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;t_Val=&lt;apos&gt;&lt;apos&gt;&lt;lf&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;for&lt;space&gt;item&lt;space&gt;in&lt;space&gt;str_j:&lt;lf&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;if&lt;space&gt;&lt;openparen&gt;item&lt;openbracket&gt;0&lt;closebracket&gt;==&lt;apos&gt;&lt;u0435&gt;&lt;apos&gt;&lt;space&gt;or&lt;space&gt;item&lt;openbracket&gt;0&lt;closebracket&gt;==&lt;apos&gt;&lt;u0451&gt;&lt;apos&gt;&lt;closeparen&gt;:&lt;lf&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;t_Val=t_Val+&lt;apos&gt;ye&lt;apos&gt;+item&lt;openbracket&gt;1:&lt;closebracket&gt;&lt;lf&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;elif&lt;space&gt;&lt;openparen&gt;item&lt;openbracket&gt;0&lt;closebracket&gt;==&lt;apos&gt;&lt;u0415&gt;&lt;apos&gt;&lt;space&gt;or&lt;space&gt;item&lt;openbracket&gt;0&lt;closebracket&gt;==&lt;apos&gt;&lt;u0401&gt;&lt;apos&gt;&lt;closeparen&gt;:&lt;lf&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;t_Val=t_Val+&lt;apos&gt;YE&lt;apos&gt;+item&lt;openbracket&gt;1:&lt;closebracket&gt;&lt;lf&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;else:&lt;lf&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;t_Val=t_Val+item&lt;openbracket&gt;:&lt;closebracket&gt;&lt;lf&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;t_Val=t_Val+&lt;apos&gt;&lt;space&gt;&lt;apos&gt;&lt;lf&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;#&lt;u0420&gt;&lt;u0430&gt;&lt;u0437&gt;&lt;u0431&gt;&lt;u0438&gt;&lt;u0440&gt;&lt;u0430&gt;&lt;u0435&gt;&lt;u043c&gt;&lt;space&gt;&lt;u0441&gt;&lt;u0442&gt;&lt;u0440&gt;&lt;u043e&gt;&lt;u043a&gt;&lt;u0443&gt;&lt;lf&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;res=&lt;apos&gt;&lt;apos&gt;&lt;lf&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;for&lt;space&gt;char&lt;space&gt;in&lt;space&gt;t_Val:&lt;lf&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;if&lt;space&gt;has.has_key&lt;openparen&gt;char&lt;closeparen&gt;:&lt;lf&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;res=res+has&lt;openbracket&gt;char&lt;closebracket&gt;&lt;lf&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;else:&lt;lf&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;res=res+char&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;#put&lt;space&gt;data&lt;space&gt;from&lt;space&gt;&lt;apos&gt;res&lt;apos&gt;&lt;space&gt;to&lt;space&gt;the&lt;space&gt;new&lt;space&gt;attribute&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;feature.setAttribute&lt;openparen&gt;&lt;quote&gt;latin_address&lt;quote&gt;&lt;comma&gt;&lt;space&gt;res&lt;closeparen&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;"/>
+#! </TRANSFORMER>
+#! <TRANSFORMER
+#!   IDENTIFIER="14"
+#!   TYPE="Inspector"
+#!   VERSION="5"
+#!   POSITION="2444.24 -323.765"
+#!   BOUNDING_RECT="2444.24 -323.765 -1 -1"
+#!   ORDER="5e+14"
+#!   PARMS_EDITED="true"
+#!   ENABLED="true"
+#!   LAST_PARM_EDIT="17539"
+#! >
+#!     <XFORM_PARM PARM_NAME="RASTER_NUM_COLS" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="THINNER_MAX_NUM_POINTS" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="RASTER_VISUALIZATION_OPTION" PARM_VALUE="No Reduction"/>
+#!     <XFORM_PARM PARM_NAME="VECTOR_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="PEN_COLOR" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="RASTER_START_COL" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="RASTER_NUM_ROWS" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="THINNER_INTERVAL" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="AREA_COLOR" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="THINNER_TYPE_DISPLAY" PARM_VALUE="No Thinning"/>
+#!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="PythonCaller_2_Output"/>
+#!     <XFORM_PARM PARM_NAME="RASTER_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="RASTER_START_ROW" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="POINTCLOUD_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="TACKATTRS" PARM_VALUE=""/>
+#! </TRANSFORMER>
+#! <TRANSFORMER
+#!   IDENTIFIER="17"
+#!   TYPE="AttributeEncoder"
+#!   VERSION="0"
+#!   POSITION="283.513 -292.501"
+#!   BOUNDING_RECT="283.513 -292.501 -1 -1"
+#!   ORDER="5e+14"
+#!   PARMS_EDITED="true"
+#!   ENABLED="true"
+#!   LAST_PARM_EDIT="17539"
+#! >
+#!     <OUTPUT_FEAT NAME="OUTPUT"/>
+#!     <FEAT_COLLAPSED COLLAPSED="0"/>
+#!     <XFORM_ATTR ATTR_NAME="region" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="city" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="address" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="place" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="atmType" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="openingHours" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="cardType" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="currency" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="cashIn" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="exchange" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="latitude" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="longitude" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_PARM PARM_NAME="ATTRLIST" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="DEST_ENCODING" PARM_VALUE="fme-system"/>
+#!     <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="ATTRS_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="ATTRCHOICE" PARM_VALUE="All Attributes"/>
+#!     <XFORM_PARM PARM_NAME="PARAMETERS_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="AttributeEncoder"/>
+#!     <XFORM_PARM PARM_NAME="TREAT_AS_BYTES" PARM_VALUE="Honor Encoding"/>
+#! </TRANSFORMER>
+#! <TRANSFORMER
+#!   IDENTIFIER="21"
+#!   TYPE="Tester"
+#!   VERSION="2"
+#!   POSITION="952.483 -284.784"
+#!   BOUNDING_RECT="952.483 -284.784 -1 -1"
+#!   ORDER="5e+14"
+#!   PARMS_EDITED="true"
+#!   ENABLED="true"
+#!   LAST_PARM_EDIT="17539"
+#!   OUTPUT_FT_ORDER="FAILED%PASSED"
+#! >
+#!     <OUTPUT_FEAT NAME="FAILED"/>
+#!     <FEAT_COLLAPSED COLLAPSED="0"/>
+#!     <XFORM_ATTR ATTR_NAME="region" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="city" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="address" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="place" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="atmType" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="openingHours" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="cardType" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="currency" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="cashIn" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="exchange" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="latitude" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="longitude" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <OUTPUT_FEAT NAME="PASSED"/>
+#!     <FEAT_COLLAPSED COLLAPSED="1"/>
+#!     <XFORM_ATTR ATTR_NAME="region" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="city" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="address" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="place" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="atmType" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="openingHours" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="cardType" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="currency" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="cashIn" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="exchange" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="latitude" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="longitude" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_PARM PARM_NAME="TEST_MODE" PARM_VALUE="Automatic"/>
+#!     <XFORM_PARM PARM_NAME="COMPOSITE_TEST" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="TEST_DESCRIPTION" PARM_VALUE="&quot;&quot;"/>
+#!     <XFORM_PARM PARM_NAME="TEST_LIST" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="Tester"/>
+#!     <XFORM_PARM PARM_NAME="TEST_CLAUSE" PARM_VALUE="TEST address ATTRIBUTE_IS_MISSING &quot;&quot;"/>
+#!     <XFORM_PARM PARM_NAME="BOOL_OP" PARM_VALUE="OR"/>
+#! </TRANSFORMER>
+#! <TRANSFORMER
+#!   IDENTIFIER="18"
+#!   TYPE="AttributeManager"
+#!   VERSION="1"
+#!   POSITION="-318.712 -292.501"
+#!   BOUNDING_RECT="-318.712 -292.501 -1 -1"
+#!   ORDER="5e+14"
+#!   PARMS_EDITED="true"
+#!   ENABLED="true"
+#!   LAST_PARM_EDIT="17539"
+#! >
+#!     <OUTPUT_FEAT NAME="OUTPUT"/>
+#!     <FEAT_COLLAPSED COLLAPSED="0"/>
+#!     <XFORM_ATTR ATTR_NAME="region" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="city" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="address" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="place" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="atmType" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="openingHours" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="cardType" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="currency" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="cashIn" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="exchange" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="latitude" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="longitude" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_PARM PARM_NAME="ATTRIBUTE_HANDLING" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="NULL_ATTR_VALUE" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="NUM_PRIOR_FEATURES" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="ATTR_TABLE" PARM_VALUE="&lt;u0420&gt;&lt;u0435&gt;&lt;u0433&gt;&lt;u0438&gt;&lt;u043e&gt;&lt;u043d&gt;&lt;comma&gt;&lt;space&gt;&lt;u043e&gt;&lt;u0431&gt;&lt;u043b&gt;&lt;u0430&gt;&lt;u0441&gt;&lt;u0442&gt;&lt;u044c&gt; region  RENAME_SET_VALUE &lt;u041d&gt;&lt;u0430&gt;&lt;u0437&gt;&lt;u0432&gt;&lt;u0430&gt;&lt;u043d&gt;&lt;u0438&gt;&lt;u0435&gt;&lt;space&gt;&lt;u043d&gt;&lt;u0430&gt;&lt;u0441&gt;&lt;u0435&gt;&lt;u043b&gt;&lt;u0435&gt;&lt;u043d&gt;&lt;space&gt;&lt;u043f&gt;&lt;u0443&gt;&lt;u043d&gt;&lt;u043a&gt;&lt;u0442&gt;&lt;u0430&gt; city  RENAME_SET_VALUE &lt;u0410&gt;&lt;u0434&gt;&lt;u0440&gt;&lt;u0435&gt;&lt;u0441&gt; address  RENAME_SET_VALUE &lt;u041c&gt;&lt;u0435&gt;&lt;u0441&gt;&lt;u0442&gt;&lt;u043e&gt;&lt;space&gt;&lt;u0440&gt;&lt;u0430&gt;&lt;u0441&gt;&lt;u043f&gt;&lt;u043e&gt;&lt;u043b&gt;&lt;u043e&gt;&lt;u0436&gt;&lt;u0435&gt;&lt;u043d&gt;&lt;u0438&gt;&lt;u044f&gt; place  RENAME_SET_VALUE &lt;u0412&gt;&lt;u0438&gt;&lt;u0434&gt;&lt;space&gt;&lt;u0431&gt;&lt;u0430&gt;&lt;u043d&gt;&lt;u043a&gt;&lt;u043e&gt;&lt;u043c&gt;&lt;u0430&gt;&lt;u0442&gt;&lt;u0430&gt; atmType  RENAME_SET_VALUE &lt;u0420&gt;&lt;u0435&gt;&lt;u0436&gt;&lt;u0438&gt;&lt;u043c&gt;&lt;space&gt;&lt;u0440&gt;&lt;u0430&gt;&lt;u0431&gt;&lt;u043e&gt;&lt;u0442&gt;&lt;u044b&gt; openingHours  RENAME_SET_VALUE &lt;u0412&gt;&lt;u0438&gt;&lt;u0434&gt;&lt;space&gt;&lt;u043a&gt;&lt;u0430&gt;&lt;u0440&gt;&lt;u0442&gt;&lt;u044b&gt; cardType  RENAME_SET_VALUE &lt;u0412&gt;&lt;u0430&gt;&lt;u043b&gt;&lt;u044e&gt;&lt;u0442&gt;&lt;u0430&gt; currency  RENAME_SET_VALUE Cash-in cashIn  RENAME_SET_VALUE &lt;u041e&gt;&lt;u0431&gt;&lt;u043c&gt;&lt;u0435&gt;&lt;u043d&gt;&lt;space&gt;&lt;u0432&gt;&lt;u0430&gt;&lt;u043b&gt;&lt;u044e&gt;&lt;u0442&gt;&lt;u044b&gt; exchange  RENAME_SET_VALUE &lt;u041a&gt;&lt;u043e&gt;&lt;u043e&gt;&lt;u0440&gt;&lt;u0434&gt;&lt;u0438&gt;&lt;u043d&gt;&lt;u0430&gt;&lt;u0442&gt;&lt;u044b&gt;&lt;space&gt;-&lt;space&gt;&lt;u0448&gt;&lt;u0438&gt;&lt;u0440&gt;&lt;u043e&gt;&lt;u0442&gt;&lt;u0430&gt; latitude  RENAME_SET_VALUE &lt;u041a&gt;&lt;u043e&gt;&lt;u043e&gt;&lt;u0440&gt;&lt;u0434&gt;&lt;u0438&gt;&lt;u043d&gt;&lt;u0430&gt;&lt;u0442&gt;&lt;u044b&gt;&lt;space&gt;-&lt;space&gt;&lt;u0434&gt;&lt;u043e&gt;&lt;u043b&gt;&lt;u0433&gt;&lt;u043e&gt;&lt;u0442&gt;&lt;u0430&gt; longitude  RENAME_SET_VALUE &lt;u041f&gt;&lt;u0440&gt;&lt;u0438&gt;&lt;u043d&gt;&lt;u0430&gt;&lt;u0434&gt;&lt;u043b&gt;&lt;u0435&gt;&lt;u0436&gt;&lt;u043d&gt;&lt;u043e&gt;&lt;u0441&gt;&lt;u0442&gt;&lt;u044c&gt;&lt;space&gt;&lt;u0444&gt;&lt;u0438&gt;&lt;u043b&gt;&lt;u0438&gt;&lt;u0430&gt;&lt;u043b&gt;&lt;u0443&gt; &lt;u041f&gt;&lt;u0440&gt;&lt;u0438&gt;&lt;u043d&gt;&lt;u0430&gt;&lt;u0434&gt;&lt;u043b&gt;&lt;u0435&gt;&lt;u0436&gt;&lt;u043d&gt;&lt;u043e&gt;&lt;u0441&gt;&lt;u0442&gt;&lt;u044c&gt;&lt;space&gt;&lt;u0444&gt;&lt;u0438&gt;&lt;u043b&gt;&lt;u0438&gt;&lt;u0430&gt;&lt;u043b&gt;&lt;u0443&gt;  REMOVE"/>
+#!     <XFORM_PARM PARM_NAME="NULL_ATTR_MODE_DISPLAY" PARM_VALUE="No Substitution"/>
+#!     <XFORM_PARM PARM_NAME="MULTI_FEATURE_MODE" PARM_VALUE="NO"/>
+#!     <XFORM_PARM PARM_NAME="NUM_SUBSEQUENT_FEATURES" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="ATTRIBUTE_GRP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="AttributeManager"/>
+#! </TRANSFORMER>
+#! </TRANSFORMERS>
+#! <FEAT_LINKS>
+#! <FEAT_LINK
+#!   IDENTIFIER="19"
+#!   SOURCE_NODE="16"
+#!   TARGET_NODE="18"
+#!   SOURCE_PORT_DESC="-1"
+#!   TARGET_PORT_DESC="fi 0 "
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="15"
+#!   SOURCE_NODE="7"
+#!   TARGET_NODE="14"
+#!   SOURCE_PORT_DESC="fo 0 OUTPUT"
+#!   TARGET_PORT_DESC="fi 0 "
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="23"
+#!   SOURCE_NODE="17"
+#!   TARGET_NODE="21"
+#!   SOURCE_PORT_DESC="fo 0 OUTPUT"
+#!   TARGET_PORT_DESC="fi 0 "
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="20"
+#!   SOURCE_NODE="18"
+#!   TARGET_NODE="17"
+#!   SOURCE_PORT_DESC="fo 0 OUTPUT"
+#!   TARGET_PORT_DESC="fi 0 "
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="12"
+#!   SOURCE_NODE="21"
+#!   TARGET_NODE="14"
+#!   SOURCE_PORT_DESC="fo 1 PASSED"
+#!   TARGET_PORT_DESC="fi 0 "
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   EXTRA_POINTS="1643 -748 2060 -752"
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="10"
+#!   SOURCE_NODE="21"
+#!   TARGET_NODE="7"
+#!   SOURCE_PORT_DESC="fo 0 FAILED"
+#!   TARGET_PORT_DESC="fi 0 "
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   EXTRA_POINTS=""
+#! />
+#! </FEAT_LINKS>
+#! <BREAKPOINTS>
+#! </BREAKPOINTS>
+#! <ATTR_LINKS>
+#! </ATTR_LINKS>
+#! <SUBDOCUMENTS>
+#! </SUBDOCUMENTS>
+#! <LOOKUP_TABLES>
+#! </LOOKUP_TABLES>
+#! </WORKSPACE>
+FME_PYTHON_VERSION 27
+GUI IGNORE SourceDataset_XLSXR_2,XLSXR_IN_ADVANCED_XLSXR_2,XLSXR_IN_SCAN_SCHEMA_IF_DYNAMIC_XLSXR_2,XLSXR_IN_READ_BLANK_AS_XLSXR_2,XLSXR_IN_EXPAND_MERGED_CELLS_XLSXR_2,XLSXR_IN_EXPOSE_ATTRS_GROUP_XLSXR_2,XLSXR_IN_NETWORK_AUTHENTICATION_XLSXR_2,SourceDataset_XLSXR_1,XLSXR_IN_ADVANCED_XLSXR_1,XLSXR_IN_SCAN_SCHEMA_IF_DYNAMIC_XLSXR_1,XLSXR_IN_READ_BLANK_AS_XLSXR_1,XLSXR_IN_EXPAND_MERGED_CELLS_XLSXR_1,XLSXR_IN_EXPOSE_ATTRS_GROUP_XLSXR_1,XLSXR_IN_NETWORK_AUTHENTICATION_XLSXR_1
+DEFAULT_MACRO SourceDataset_XLSXR C:\Users\wole1\Desktop\bankomat_all_27.10.2017.xls
+GUI MULTIFILE SourceDataset_XLSXR Excel_Files(*.xlsx;*.xlsm;*.xls)|*.xlsx;*.xlsm;*.xls|Excel_Workbook_2007(*.xlsx)|*.xlsx|Excel_Macro_Workbook(*.xlsm)|*.xlsm|Excel_Workbook_Pre_2007(*.xls)|*.xls|All_files(*)|* Source Microsoft Excel File(s):
+DEFAULT_MACRO SourceDataset_XLSXR_4 http://www.gazprombank.ru/atm/downloads/bankomat_all_29.12.2017.xls
+GUI MULTIFILE SourceDataset_XLSXR_4 Excel_Files(*.xlsx;*.xlsm;*.xls)|*.xlsx;*.xlsm;*.xls|Excel_Workbook_2007(*.xlsx)|*.xlsx|Excel_Macro_Workbook(*.xlsm)|*.xlsm|Excel_Workbook_Pre_2007(*.xls)|*.xls|All_files(*)|* Source Microsoft Excel File(s):
+INCLUDE [ if {{$(SourceDataset_XLSXR)} == {}} { puts_real {Parameter 'SourceDataset_XLSXR' must be given a value.}; exit 1; }; ]
+INCLUDE [ if {{$(SourceDataset_XLSXR_4)} == {}} { puts_real {Parameter 'SourceDataset_XLSXR_4' must be given a value.}; exit 1; }; ]
+#! START_HEADER
+#! START_WB_HEADER
+READER_TYPE MULTI_READER
+MULTI_READER_TYPE{0} NULL
+MULTI_READER_FORMAT{0} XLSXR
+MULTI_READER_KEYWORD{0} XLSXR_2
+MULTI_READER_GEN_DIRECTIVES{0} UPDATE_FEATURE_TYPES,yes,READ_BLANK_AS,Missing,SCHEMA,,USE_SCHEMA_OTHER_FILES,No,QUERY_FEATURE_TYPES_FOR_MERGE_FILTERS,Yes,_MERGE_SCHEMAS,YES,CASE_SENSITIVE_FEATURE_TYPES,YES,ALLOW_DOLLAR_SIGNS,YES,EXPAND_MERGED_CELLS,Yes,SCAN_SCHEMA_IF_DYNAMIC,No,ADVANCED,,TABLELIST,Sheet1<solidus>RUS_spider_col__lan_codes__20171013,FORCE_DATETIME,NO,EXPOSE_ATTRS_GROUP,,EXCEL_COL_NAMES,YES,CONFIGURATION_DATASET,,XLSXR_EXPOSE_FORMAT_ATTRS,
+MULTI_READER_TYPE{1} XLSXR
+MULTI_READER_KEYWORD{1} XLSXR_1
+MULTI_READER_GEN_DIRECTIVES{1} READ_BLANK_AS,Missing,SCHEMA,<lt>u041b<gt><lt>u0438<gt><lt>u0441<gt><lt>u0442<gt>1<lt>solidus<gt>header<comma>0<lt>comma<gt><lt>quote<gt><lt>u0420<gt><lt>u0435<gt><lt>u0433<gt><lt>u0438<gt><lt>u043e<gt><lt>u043d<gt><lt>comma<gt><lt>space<gt><lt>u043e<gt><lt>u0431<gt><lt>u043b<gt><lt>u0430<gt><lt>u0441<gt><lt>u0442<gt><lt>u044c<gt><lt>quote<gt><lt>comma<gt>char<lt>comma<gt>14<lt>comma<gt><lt>comma<gt><lt>comma<gt>1<lt>comma<gt><lt>quote<gt><lt>u041d<gt><lt>u0430<gt><lt>u0437<gt><lt>u0432<gt><lt>u0430<gt><lt>u043d<gt><lt>u0438<gt><lt>u0435<gt><lt>space<gt><lt>u043d<gt><lt>u0430<gt><lt>u0441<gt><lt>u0435<gt><lt>u043b<gt><lt>u0435<gt><lt>u043d<gt><lt>space<gt><lt>u043f<gt><lt>u0443<gt><lt>u043d<gt><lt>u043a<gt><lt>u0442<gt><lt>u0430<gt><lt>quote<gt><lt>comma<gt>char<lt>comma<gt>25<lt>comma<gt><lt>comma<gt><lt>comma<gt>2<lt>comma<gt><lt>u0410<gt><lt>u0434<gt><lt>u0440<gt><lt>u0435<gt><lt>u0441<gt><lt>comma<gt>char<lt>comma<gt>160<lt>comma<gt><lt>comma<gt><lt>comma<gt>3<lt>comma<gt><lt>quote<gt><lt>u041c<gt><lt>u0435<gt><lt>u0441<gt><lt>u0442<gt><lt>u043e<gt><lt>space<gt><lt>u0440<gt><lt>u0430<gt><lt>u0441<gt><lt>u043f<gt><lt>u043e<gt><lt>u043b<gt><lt>u043e<gt><lt>u0436<gt><lt>u0435<gt><lt>u043d<gt><lt>u0438<gt><lt>u044f<gt><lt>quote<gt><lt>comma<gt>char<lt>comma<gt>203<lt>comma<gt><lt>comma<gt><lt>comma<gt>4<lt>comma<gt><lt>quote<gt><lt>u0412<gt><lt>u0438<gt><lt>u0434<gt><lt>space<gt><lt>u0431<gt><lt>u0430<gt><lt>u043d<gt><lt>u043a<gt><lt>u043e<gt><lt>u043c<gt><lt>u0430<gt><lt>u0442<gt><lt>u0430<gt><lt>quote<gt><lt>comma<gt>char<lt>comma<gt>4<lt>comma<gt><lt>comma<gt><lt>comma<gt>5<lt>comma<gt><lt>quote<gt><lt>u0420<gt><lt>u0435<gt><lt>u0436<gt><lt>u0438<gt><lt>u043c<gt><lt>space<gt><lt>u0440<gt><lt>u0430<gt><lt>u0431<gt><lt>u043e<gt><lt>u0442<gt><lt>u044b<gt><lt>quote<gt><lt>comma<gt>char<lt>comma<gt>117<lt>comma<gt><lt>comma<gt><lt>comma<gt>6<lt>comma<gt><lt>quote<gt><lt>u0412<gt><lt>u0438<gt><lt>u0434<gt><lt>space<gt><lt>u043a<gt><lt>u0430<gt><lt>u0440<gt><lt>u0442<gt><lt>u044b<gt><lt>quote<gt><lt>comma<gt>char<lt>comma<gt>41<lt>comma<gt><lt>comma<gt><lt>comma<gt>7<lt>comma<gt><lt>u0412<gt><lt>u0430<gt><lt>u043b<gt><lt>u044e<gt><lt>u0442<gt><lt>u0430<gt><lt>comma<gt>char<lt>comma<gt>14<lt>comma<gt><lt>comma<gt><lt>comma<gt>8<lt>comma<gt>Cash-in<lt>comma<gt>char<lt>comma<gt>4<lt>comma<gt><lt>comma<gt><lt>comma<gt>9<lt>comma<gt><lt>quote<gt><lt>u041e<gt><lt>u0431<gt><lt>u043c<gt><lt>u0435<gt><lt>u043d<gt><lt>space<gt><lt>u0432<gt><lt>u0430<gt><lt>u043b<gt><lt>u044e<gt><lt>u0442<gt><lt>u044b<gt><lt>quote<gt><lt>comma<gt>char<lt>comma<gt>11<lt>comma<gt><lt>comma<gt><lt>comma<gt>10<lt>comma<gt><lt>quote<gt><lt>u041a<gt><lt>u043e<gt><lt>u043e<gt><lt>u0440<gt><lt>u0434<gt><lt>u0438<gt><lt>u043d<gt><lt>u0430<gt><lt>u0442<gt><lt>u044b<gt><lt>space<gt>-<lt>space<gt><lt>u0448<gt><lt>u0438<gt><lt>u0440<gt><lt>u043e<gt><lt>u0442<gt><lt>u0430<gt><lt>quote<gt><lt>comma<gt>number<lt>comma<gt>10<lt>comma<gt>6<lt>comma<gt><lt>comma<gt>11<lt>comma<gt><lt>quote<gt><lt>u041a<gt><lt>u043e<gt><lt>u043e<gt><lt>u0440<gt><lt>u0434<gt><lt>u0438<gt><lt>u043d<gt><lt>u0430<gt><lt>u0442<gt><lt>u044b<gt><lt>space<gt>-<lt>space<gt><lt>u0434<gt><lt>u043e<gt><lt>u043b<gt><lt>u0433<gt><lt>u043e<gt><lt>u0442<gt><lt>u0430<gt><lt>quote<gt><lt>comma<gt>number<lt>comma<gt>10<lt>comma<gt>6<lt>comma<gt><lt>comma<gt>12<lt>comma<gt><lt>quote<gt><lt>u041f<gt><lt>u0440<gt><lt>u0438<gt><lt>u043d<gt><lt>u0430<gt><lt>u0434<gt><lt>u043b<gt><lt>u0435<gt><lt>u0436<gt><lt>u043d<gt><lt>u043e<gt><lt>u0441<gt><lt>u0442<gt><lt>u044c<gt><lt>space<gt><lt>u0444<gt><lt>u0438<gt><lt>u043b<gt><lt>u0438<gt><lt>u0430<gt><lt>u043b<gt><lt>u0443<gt><lt>quote<gt><lt>comma<gt>char<lt>comma<gt>43<lt>comma<gt><lt>comma<gt><comma>3<lt>comma<gt>4139<lt>comma<gt>0<lt>comma<gt>12<comma>NO<lt>comma<gt>NO<lt>comma<gt>3<lt>comma<gt>http:<lt>solidus<gt><lt>solidus<gt>www.gazprombank.ru<lt>solidus<gt>atm<lt>solidus<gt>downloads<lt>solidus<gt>bankomat_all_29.12.2017.xls<lt>comma<gt><lt>quote<gt>0<lt>comma<gt>2<lt>comma<gt>12<lt>comma<gt>4139<lt>quote<gt><lt>comma<gt><lt>u041b<gt><lt>u0438<gt><lt>u0441<gt><lt>u0442<gt>1<lt>comma<gt>NO,USE_SCHEMA_OTHER_FILES,No,QUERY_FEATURE_TYPES_FOR_MERGE_FILTERS,Yes,_MERGE_SCHEMAS,YES,CASE_SENSITIVE_FEATURE_TYPES,YES,ALLOW_DOLLAR_SIGNS,YES,EXPAND_MERGED_CELLS,Yes,SCAN_SCHEMA_IF_DYNAMIC,No,NETWORK_AUTHENTICATION,,ADVANCED,FME_DISCLOSURE_OPEN,TABLELIST,<u041b><u0438><u0441><u0442>1<solidus>header,FORCE_DATETIME,NO,EXPOSE_ATTRS_GROUP,FME_DISCLOSURE_OPEN,EXCEL_COL_NAMES,YES,CONFIGURATION_DATASET,http:<solidus><solidus>www.gazprombank.ru<solidus>atm<solidus>downloads<solidus>bankomat_all_29.12.2017.xls,XLSXR_EXPOSE_FORMAT_ATTRS,
+
+WRITER_TYPE NULL
+WRITER_KEYWORD NULL_DEST
+NULL_DEST_DATASET null
+#! END_WB_HEADER
+
+#! START_WB_HEADER
+MACRO WB_KEYWORD "XLSXR_2"
+#! END_WB_HEADER
+#! START_SOURCE_HEADER XLSXR XLSXR_2
+# ============================================================================
+# First get the dataset for the database. For Excel, it's the file name.
+# For now we'll use whatever they had when they generated this mapping file,
+# and not reprompt
+# The dataset this mapping file was generated from was:
+#! END_SOURCE_HEADER
+#! START_WB_HEADER
+DEFAULT_MACRO SourceDataset
+INCLUDE [ if {{$(SourceDataset)} != ""} {                        \
+ puts {DEFAULT_MACRO SourceDataset_XLSXR_2 $(SourceDataset)}     \
+ } ]
+#! END_WB_HEADER
+#! START_SOURCE_HEADER XLSXR XLSXR_2
+DEFAULT_MACRO SourceDataset_XLSXR_2 $(SourceDataset_XLSXR)
+GUI MULTIFILE SourceDataset_XLSXR_2 Excel_Files(*.xlsx;*.xlsm;*.xls)|*.xlsx;*.xlsm;*.xls|Excel_Workbook_2007(*.xlsx)|*.xlsx|Excel_Macro_Workbook(*.xlsm)|*.xlsm|Excel_Workbook_Pre_2007(*.xls)|*.xls|All_files(*)|* Source Microsoft Excel File(s):
+#GUI GROUP TABLELIST Constraints
+# TABLELIST is not shown in GUI, but is required for infrastructure
+# to not show the Table List popup
+DEFAULT_MACRO XLSXR_IN_CONFIGURATION_DATASET_XLSXR_2 
+XLSXR_2_CONFIGURATION_DATASET "$(XLSXR_IN_CONFIGURATION_DATASET_XLSXR_2)"
+# Flag to switch from old naming scheme of col_1, col_2 etc. to a, b, etc.
+# To better match up with Excel files
+DEFAULT_MACRO XLSXR_IN_EXCEL_COL_NAMES_XLSXR_2 YES
+XLSXR_2_EXCEL_COL_NAMES "$(XLSXR_IN_EXCEL_COL_NAMES_XLSXR_2)"
+DEFAULT_MACRO XLSXR_IN_FORCE_DATETIME_XLSXR_2 NO
+XLSXR_2_FORCE_DATETIME "$(XLSXR_IN_FORCE_DATETIME_XLSXR_2)"
+DEFAULT_MACRO XLSXR_IN_ADVANCED_XLSXR_2 
+GUI OPTIONAL DISCLOSUREGROUP XLSXR_IN_ADVANCED_XLSXR_2 XLSXR_IN_SCAN_SCHEMA_IF_DYNAMIC_XLSXR_2%XLSXR_IN_USE_SCHEMA_OTHER_FILES%XLSXR_IN_READ_BLANK_AS_XLSXR_2%XLSXR_IN_EXPAND_MERGED_CELLS_XLSXR_2 Advanced
+DEFAULT_MACRO XLSXR_IN_SCAN_SCHEMA_IF_DYNAMIC_XLSXR_2 No
+XLSXR_2_SCAN_SCHEMA_IF_DYNAMIC "$(XLSXR_IN_SCAN_SCHEMA_IF_DYNAMIC_XLSXR_2)"
+GUI OPTIONAL CHECKBOX XLSXR_IN_SCAN_SCHEMA_IF_DYNAMIC_XLSXR_2 Yes%No Scan Schema in Dynamic Workflow:
+DEFAULT_MACRO XLSXR_IN_USE_SCHEMA_OTHER_FILES_XLSXR_2 No
+XLSXR_2_USE_SCHEMA_OTHER_FILES "$(XLSXR_IN_USE_SCHEMA_OTHER_FILES_XLSXR_2)"
+DEFAULT_MACRO XLSXR_IN_READ_BLANK_AS_XLSXR_2 Missing
+XLSXR_2_READ_BLANK_AS "$(XLSXR_IN_READ_BLANK_AS_XLSXR_2)"
+GUI CHOICE XLSXR_IN_READ_BLANK_AS_XLSXR_2 Missing%Null Read blank cells as:
+DEFAULT_MACRO XLSXR_IN_EXPAND_MERGED_CELLS_XLSXR_2 Yes
+XLSXR_2_EXPAND_MERGED_CELLS "$(XLSXR_IN_EXPAND_MERGED_CELLS_XLSXR_2)"
+GUI OPTIONAL CHECKBOX XLSXR_IN_EXPAND_MERGED_CELLS_XLSXR_2 Yes%No Expand Merged Cells:
+DEFAULT_MACRO XLSXR_IN_EXPOSE_ATTRS_GROUP_XLSXR_2 
+XLSXR_2_EXPOSE_ATTRS_GROUP "$(XLSXR_IN_EXPOSE_ATTRS_GROUP_XLSXR_2)"
+GUI OPTIONAL DISCLOSUREGROUP XLSXR_IN_EXPOSE_ATTRS_GROUP_XLSXR_2 XLSXR_IN_XLSXR_EXPOSE_FORMAT_ATTRS Schema Attributes
+DEFAULT_MACRO XLSXR_IN_QUERY_FEATURE_TYPES_FOR_MERGE_FILTERS_XLSXR_2 Yes
+XLSXR_2_QUERY_FEATURE_TYPES_FOR_MERGE_FILTERS "$(XLSXR_IN_QUERY_FEATURE_TYPES_FOR_MERGE_FILTERS_XLSXR_2)"
+DEFAULT_MACRO XLSXR_IN_CASE_SENSITIVE_FEATURE_TYPES_XLSXR_2 YES
+XLSXR_2_CASE_SENSITIVE_FEATURE_TYPES "$(XLSXR_IN_CASE_SENSITIVE_FEATURE_TYPES_XLSXR_2)"
+DEFAULT_MACRO XLSXR_IN_ALLOW_DOLLAR_SIGNS_XLSXR_2 YES
+XLSXR_2_ALLOW_DOLLAR_SIGNS "$(XLSXR_IN_ALLOW_DOLLAR_SIGNS_XLSXR_2)"
+# ===========================================================================
+DEFAULT_MACRO XLSXR_IN_NETWORK_AUTHENTICATION_XLSXR_2 
+XLSXR_2_NETWORK_AUTHENTICATION "$(XLSXR_IN_NETWORK_AUTHENTICATION_XLSXR_2)"
+GUI OPTIONAL AUTHENTICATOR XLSXR_IN_NETWORK_AUTHENTICATION_XLSXR_2 CONTAINER%GROUP%CONTAINER_TITLE%"Network Authentication"%PROMPT_TYPE%NETWORK Network Authentication
+# ===========================================================================
+DEFAULT_MACRO XLSXR_IN_ATTRIBUTE_READING_XLSXR_2 DEFLINE
+XLSXR_2_ATTRIBUTE_READING "$(XLSXR_IN_ATTRIBUTE_READING_XLSXR_2)"
+XLSXR_2_DATASET "$(SourceDataset_XLSXR_2)"
+#! END_SOURCE_HEADER
+#! START_WB_HEADER
+MACRO WB_KEYWORD "XLSXR_1"
+#! END_WB_HEADER
+#! START_SOURCE_HEADER XLSXR XLSXR_1
+# ============================================================================
+# First get the dataset for the database. For Excel, it's the file name.
+# For now we'll use whatever they had when they generated this mapping file,
+# and not reprompt
+# The dataset this mapping file was generated from was:
+#! END_SOURCE_HEADER
+#! START_WB_HEADER
+DEFAULT_MACRO SourceDataset
+INCLUDE [ if {{$(SourceDataset)} != ""} {                        \
+ puts {DEFAULT_MACRO SourceDataset_XLSXR_1 $(SourceDataset)}     \
+ } ]
+#! END_WB_HEADER
+#! START_SOURCE_HEADER XLSXR XLSXR_1
+DEFAULT_MACRO SourceDataset_XLSXR_1 $(SourceDataset_XLSXR_4)
+GUI MULTIFILE SourceDataset_XLSXR_1 Excel_Files(*.xlsx;*.xlsm;*.xls)|*.xlsx;*.xlsm;*.xls|Excel_Workbook_2007(*.xlsx)|*.xlsx|Excel_Macro_Workbook(*.xlsm)|*.xlsm|Excel_Workbook_Pre_2007(*.xls)|*.xls|All_files(*)|* Source Microsoft Excel File(s):
+#GUI GROUP TABLELIST Constraints
+# TABLELIST is not shown in GUI, but is required for infrastructure
+# to not show the Table List popup
+DEFAULT_MACRO XLSXR_IN_CONFIGURATION_DATASET_XLSXR_1 http://www.gazprombank.ru/atm/downloads/bankomat_all_29.12.2017.xls
+XLSXR_1_CONFIGURATION_DATASET "$(XLSXR_IN_CONFIGURATION_DATASET_XLSXR_1)"
+# Flag to switch from old naming scheme of col_1, col_2 etc. to a, b, etc.
+# To better match up with Excel files
+DEFAULT_MACRO XLSXR_IN_EXCEL_COL_NAMES_XLSXR_1 YES
+XLSXR_1_EXCEL_COL_NAMES "$(XLSXR_IN_EXCEL_COL_NAMES_XLSXR_1)"
+DEFAULT_MACRO XLSXR_IN_FORCE_DATETIME_XLSXR_1 NO
+XLSXR_1_FORCE_DATETIME "$(XLSXR_IN_FORCE_DATETIME_XLSXR_1)"
+DEFAULT_MACRO XLSXR_IN_ADVANCED_XLSXR_1 
+GUI OPTIONAL DISCLOSUREGROUP XLSXR_IN_ADVANCED_XLSXR_1 XLSXR_IN_SCAN_SCHEMA_IF_DYNAMIC_XLSXR_1%XLSXR_IN_USE_SCHEMA_OTHER_FILES%XLSXR_IN_READ_BLANK_AS_XLSXR_1%XLSXR_IN_EXPAND_MERGED_CELLS_XLSXR_1 Advanced
+DEFAULT_MACRO XLSXR_IN_SCAN_SCHEMA_IF_DYNAMIC_XLSXR_1 No
+XLSXR_1_SCAN_SCHEMA_IF_DYNAMIC "$(XLSXR_IN_SCAN_SCHEMA_IF_DYNAMIC_XLSXR_1)"
+GUI OPTIONAL CHECKBOX XLSXR_IN_SCAN_SCHEMA_IF_DYNAMIC_XLSXR_1 Yes%No Scan Schema in Dynamic Workflow:
+DEFAULT_MACRO XLSXR_IN_USE_SCHEMA_OTHER_FILES_XLSXR_1 No
+XLSXR_1_USE_SCHEMA_OTHER_FILES "$(XLSXR_IN_USE_SCHEMA_OTHER_FILES_XLSXR_1)"
+DEFAULT_MACRO XLSXR_IN_READ_BLANK_AS_XLSXR_1 Missing
+XLSXR_1_READ_BLANK_AS "$(XLSXR_IN_READ_BLANK_AS_XLSXR_1)"
+GUI CHOICE XLSXR_IN_READ_BLANK_AS_XLSXR_1 Missing%Null Read blank cells as:
+DEFAULT_MACRO XLSXR_IN_EXPAND_MERGED_CELLS_XLSXR_1 Yes
+XLSXR_1_EXPAND_MERGED_CELLS "$(XLSXR_IN_EXPAND_MERGED_CELLS_XLSXR_1)"
+GUI OPTIONAL CHECKBOX XLSXR_IN_EXPAND_MERGED_CELLS_XLSXR_1 Yes%No Expand Merged Cells:
+DEFAULT_MACRO XLSXR_IN_EXPOSE_ATTRS_GROUP_XLSXR_1 FME_DISCLOSURE_OPEN
+XLSXR_1_EXPOSE_ATTRS_GROUP "$(XLSXR_IN_EXPOSE_ATTRS_GROUP_XLSXR_1)"
+GUI OPTIONAL DISCLOSUREGROUP XLSXR_IN_EXPOSE_ATTRS_GROUP_XLSXR_1 XLSXR_IN_XLSXR_EXPOSE_FORMAT_ATTRS Schema Attributes
+DEFAULT_MACRO XLSXR_IN_QUERY_FEATURE_TYPES_FOR_MERGE_FILTERS_XLSXR_1 Yes
+XLSXR_1_QUERY_FEATURE_TYPES_FOR_MERGE_FILTERS "$(XLSXR_IN_QUERY_FEATURE_TYPES_FOR_MERGE_FILTERS_XLSXR_1)"
+DEFAULT_MACRO XLSXR_IN_CASE_SENSITIVE_FEATURE_TYPES_XLSXR_1 YES
+XLSXR_1_CASE_SENSITIVE_FEATURE_TYPES "$(XLSXR_IN_CASE_SENSITIVE_FEATURE_TYPES_XLSXR_1)"
+DEFAULT_MACRO XLSXR_IN_ALLOW_DOLLAR_SIGNS_XLSXR_1 YES
+XLSXR_1_ALLOW_DOLLAR_SIGNS "$(XLSXR_IN_ALLOW_DOLLAR_SIGNS_XLSXR_1)"
+# ===========================================================================
+DEFAULT_MACRO XLSXR_IN_NETWORK_AUTHENTICATION_XLSXR_1 
+XLSXR_1_NETWORK_AUTHENTICATION "$(XLSXR_IN_NETWORK_AUTHENTICATION_XLSXR_1)"
+GUI OPTIONAL AUTHENTICATOR XLSXR_IN_NETWORK_AUTHENTICATION_XLSXR_1 CONTAINER%GROUP%CONTAINER_TITLE%"Network Authentication"%PROMPT_TYPE%NETWORK Network Authentication
+# ===========================================================================
+DEFAULT_MACRO XLSXR_IN_ATTRIBUTE_READING_XLSXR_1 DEFLINE
+XLSXR_1_ATTRIBUTE_READING "$(XLSXR_IN_ATTRIBUTE_READING_XLSXR_1)"
+XLSXR_1_DATASET "$(SourceDataset_XLSXR_1)"
+#! END_SOURCE_HEADER
+#! START_WB_HEADER
+#! END_WB_HEADER
+
+#! END_HEADER
+
+LOG_FILENAME "$(FME_MF_DIR)Transliterate test.log"
+LOG_APPEND NO
+LOG_MAX_FEATURES 200
+LOG_MAX_RECORDED_FEATURES 200
+FME_REPROJECTION_ENGINE FME
+FME_IMPLICIT_CSMAP_REPROJECTION_MODE Auto
+FME_GEOMETRY_HANDLING Enhanced
+FME_STROKE_MAX_DEVIATION 0
+LOG_FILTER_MASK -1
+DEFAULT_MACRO DATASET_KEYWORD_XLSXR_2 XLSXR_2
+DEFAULT_MACRO DATASET_KEYWORD_XLSXR_1 XLSXR_1
+# -------------------------------------------------------------------------
+
+XLSXR_2_READER_META_ATTRIBUTES fme_feature_type
+
+# -------------------------------------------------------------------------
+
+XLSXR_1_READER_META_ATTRIBUTES fme_feature_type
+
+# -------------------------------------------------------------------------
+
+MULTI_READER_CONTINUE_ON_READER_FAILURE No
+
+# -------------------------------------------------------------------------
+
+MACRO WORKSPACE_NAME Transliterate test
+MACRO FME_VIEWER_APP fmedatainspector
+# -------------------------------------------------------------------------
+
+INCLUDE [ if {[info exists env(FME_TEMP)] && [file isdirectory $env(FME_TEMP)]} {set gVisualizerTemp $env(FME_TEMP)}  elseif {[info exists env(TEMP)] && [file isdirectory $env(TEMP)]}  {set gVisualizerTemp $env(TEMP)}  elseif { $tcl_platform(platform) == "unix" } {set gVisualizerTemp "/tmp"} else {set gVisualizerTemp c:};  regsub -all {[ ,&]} {$(WORKSPACE_NAME)} {_} wsname; set gVisualizerTemp $gVisualizerTemp/${wsname}_[clock format [clock seconds] -format %H%M%S];  puts "MACRO WORKSPACE_TEMP_DIR $gVisualizerTemp"; 
+MACRO VISUALIZER_FEATURE_FILE $(WORKSPACE_TEMP_DIR)/inspector.ffs
+MACRO VISUALIZER_SCHEMA_FILE $(WORKSPACE_TEMP_DIR)/inspector.fsc
+MACRO VISUALIZER_CREATE_SPATIAL_INDEX YES
+# -------------------------------------------------------------------------
+
+FACTORY_DEF * RoutingFactory   FACTORY_NAME "Router and Unexpected Input Remover"   COMMAND_PARM_EVALUATION SINGLE_PASS   INPUT FEATURE_TYPE *    ROUTE XLSXR XLSXR_1::Лист1/header multi_reader_keyword,$(DATASET_KEYWORD_XLSXR_1) TO FME_GENERIC ::Лист1/header ALIAS_GEOMETRY    MERGE_INPUT Yes   OUTPUT ROUTED FEATURE_TYPE *
+XLSXR_1_MERGE_DEF XLSXR_1::Лист1/header EXACT <u041b><u0438><u0441><u0442>1<solidus>header DEFLINE xlsx_start_row,,xlsx_end_row,,xlsx_schema_start_row,3,xlsx_schema_end_col,12,xlsx_header_row,2,xlsx_schema_end_row,4139,xlsx_schema_start_col,0,fme_attribute_reading,defined,<u0420><u0435><u0433><u0438><u043e><u043d><comma><space><u043e><u0431><u043b><u0430><u0441><u0442><u044c>,char<openparen>14<closeparen>,<u041d><u0430><u0437><u0432><u0430><u043d><u0438><u0435><space><u043d><u0430><u0441><u0435><u043b><u0435><u043d><space><u043f><u0443><u043d><u043a><u0442><u0430>,char<openparen>25<closeparen>,<u0410><u0434><u0440><u0435><u0441>,char<openparen>160<closeparen>,<u041c><u0435><u0441><u0442><u043e><space><u0440><u0430><u0441><u043f><u043e><u043b><u043e><u0436><u0435><u043d><u0438><u044f>,char<openparen>203<closeparen>,<u0412><u0438><u0434><space><u0431><u0430><u043d><u043a><u043e><u043c><u0430><u0442><u0430>,char<openparen>4<closeparen>,<u0420><u0435><u0436><u0438><u043c><space><u0440><u0430><u0431><u043e><u0442><u044b>,char<openparen>117<closeparen>,<u0412><u0438><u0434><space><u043a><u0430><u0440><u0442><u044b>,char<openparen>41<closeparen>,<u0412><u0430><u043b><u044e><u0442><u0430>,char<openparen>14<closeparen>,Cash-in,char<openparen>4<closeparen>,<u041e><u0431><u043c><u0435><u043d><space><u0432><u0430><u043b><u044e><u0442><u044b>,char<openparen>11<closeparen>,<u041a><u043e><u043e><u0440><u0434><u0438><u043d><u0430><u0442><u044b><space>-<space><u0448><u0438><u0440><u043e><u0442><u0430>,number<openparen>10<comma>6<closeparen>,<u041a><u043e><u043e><u0440><u0434><u0438><u043d><u0430><u0442><u044b><space>-<space><u0434><u043e><u043b><u0433><u043e><u0442><u0430>,number<openparen>10<comma>6<closeparen>,<u041f><u0440><u0438><u043d><u0430><u0434><u043b><u0435><u0436><u043d><u043e><u0441><u0442><u044c><space><u0444><u0438><u043b><u0438><u0430><u043b><u0443>,char<openparen>43<closeparen>
+# -------------------------------------------------------------------------
+
+FACTORY_DEF * TeeFactory    FACTORY_NAME "Лист1/header (XLSXR_1) Splitter"    INPUT FEATURE_TYPE Лист1/header    OUTPUT FEATURE_TYPE Лист1/header_XLSXR_1
+DEFAULT_MACRO WB_CURRENT_CONTEXT
+# -------------------------------------------------------------------------
+
+
+FACTORY_DEF {*} AttrSetFactory    FACTORY_NAME AttributeManager    INPUT  FEATURE_TYPE Лист1/header_XLSXR_1    MULTI_FEATURE_MODE NO     NULL_ATTR_MODE NO_OP     ATTRSET_CREATE_DIRECTIVES _PROPAGATE_MISSING_FDIV    ACTION_COLUMN 3    DEF_VAL_COLUMN 2    ATTR_ACTION { "<u0420><u0435><u0433><u0438><u043e><u043d><comma><space><u043e><u0431><u043b><u0430><u0441><u0442><u044c>" "region" "" "RENAME_SET_VALUE" }      ATTR_ACTION { "<u041d><u0430><u0437><u0432><u0430><u043d><u0438><u0435><space><u043d><u0430><u0441><u0435><u043b><u0435><u043d><space><u043f><u0443><u043d><u043a><u0442><u0430>" "city" "" "RENAME_SET_VALUE" }      ATTR_ACTION { "<u0410><u0434><u0440><u0435><u0441>" "address" "" "RENAME_SET_VALUE" }      ATTR_ACTION { "<u041c><u0435><u0441><u0442><u043e><space><u0440><u0430><u0441><u043f><u043e><u043b><u043e><u0436><u0435><u043d><u0438><u044f>" "place" "" "RENAME_SET_VALUE" }      ATTR_ACTION { "<u0412><u0438><u0434><space><u0431><u0430><u043d><u043a><u043e><u043c><u0430><u0442><u0430>" "atmType" "" "RENAME_SET_VALUE" }      ATTR_ACTION { "<u0420><u0435><u0436><u0438><u043c><space><u0440><u0430><u0431><u043e><u0442><u044b>" "openingHours" "" "RENAME_SET_VALUE" }      ATTR_ACTION { "<u0412><u0438><u0434><space><u043a><u0430><u0440><u0442><u044b>" "cardType" "" "RENAME_SET_VALUE" }      ATTR_ACTION { "<u0412><u0430><u043b><u044e><u0442><u0430>" "currency" "" "RENAME_SET_VALUE" }      ATTR_ACTION { "Cash-in" "cashIn" "" "RENAME_SET_VALUE" }      ATTR_ACTION { "<u041e><u0431><u043c><u0435><u043d><space><u0432><u0430><u043b><u044e><u0442><u044b>" "exchange" "" "RENAME_SET_VALUE" }      ATTR_ACTION { "<u041a><u043e><u043e><u0440><u0434><u0438><u043d><u0430><u0442><u044b><space>-<space><u0448><u0438><u0440><u043e><u0442><u0430>" "latitude" "" "RENAME_SET_VALUE" }      ATTR_ACTION { "<u041a><u043e><u043e><u0440><u0434><u0438><u043d><u0430><u0442><u044b><space>-<space><u0434><u043e><u043b><u0433><u043e><u0442><u0430>" "longitude" "" "RENAME_SET_VALUE" }      ATTR_ACTION { "<u041f><u0440><u0438><u043d><u0430><u0434><u043b><u0435><u0436><u043d><u043e><u0441><u0442><u044c><space><u0444><u0438><u043b><u0438><u0430><u043b><u0443>" "<u041f><u0440><u0438><u043d><u0430><u0434><u043b><u0435><u0436><u043d><u043e><u0441><u0442><u044c><space><u0444><u0438><u043b><u0438><u0430><u043b><u0443>" "" "REMOVE" }    OUTPUT OUTPUT FEATURE_TYPE AttributeManager_OUTPUT
+
+# -------------------------------------------------------------------------
+
+Tcl2 proc AttributeEncoder_convert {} {    set attrs [split {<Unused>} { }];    set allAttributes false;    if { {ALL} == {ALL} } {       set attrs [FME_AttributeNames];       set allAttributes true;    };    set parmList {{EvaluateExpression} {ATTR_SET_EXPR}};    foreach attr $attrs {      if {[string first {fme_} $attr] == 0 && $allAttributes} {         continue;      };      if {$allAttributes} {        set attr [FME_EncodeText $attr];      };      set funcAttr $attr;      if { [string first "<quote>" $attr] != -1 }      {          set funcAttr [string map {"<quote>" "<backslash><quote>"} $attr];          append funcAttr "<quote>";          set funcAttr "<quote>"$funcAttr;      };      set funcCall [join [list "<at>ConvertEncoding<openparen>fme-system<comma><at>Value<openparen>" $funcAttr "<closeparen><comma>FALSE<closeparen>"] {}];      lappend parmList $attr;      lappend parmList $funcCall;    };    lappend parmList {AttributeEncoder};    eval FME_Execute $parmList; }
+FACTORY_DEF * TeeFactory    FACTORY_NAME AttributeEncoder    INPUT  FEATURE_TYPE AttributeManager_OUTPUT    OUTPUT FEATURE_TYPE AttributeEncoder_OUTPUT         @Tcl2("AttributeEncoder_convert")
+
+
+# -------------------------------------------------------------------------
+
+FACTORY_DEF * TestFactory    FACTORY_NAME Tester    INPUT  FEATURE_TYPE AttributeEncoder_OUTPUT    TEST address ATTRIBUTE_IS_MISSING "" ENCODED    BOOLEAN_OPERATOR OR    OUTPUT PASSED FEATURE_TYPE Tester_PASSED    OUTPUT FAILED FEATURE_TYPE Tester_FAILED
+# -------------------------------------------------------------------------
+
+
+FME_PYTHON_PATH "$(FME_MF_DIR)"
+
+FACTORY_DEF * PythonFactory    FACTORY_NAME PythonCaller_2    INPUT  FEATURE_TYPE Tester_FAILED    SYMBOL_NAME Translite    PYTHON_NAMESPACE FMEOBJECTS    SOURCE_CODE import<space>string<lf>import<space>fme<lf>import<space>fmeobjects<lf><lf>#<space>WARNING<space>Put<space>Tester<space>transformer<space>to<space>exclude<space>empty<space>values<space>of<space>tranliterated<space>attribute<space>before<space>PythonCaller<comma><space>otherwise<comma><space>translation<space>return<space>an<space>error<space><space><space><space><lf><lf>def<space>Translite<openparen>feature<closeparen>:<lf><lf><space><space><space><space>#<u0421><u043e><u0437><u0434><u0430><u0451><u043c><space><u0441><u043b><u043e><u0432><u0430><u0440><u044c><lf><lf><space><space><space><space>has<space>=<space><opencurly><apos><u0410><apos>:<apos>A<apos><comma><apos><u0430><apos>:<apos>a<apos><comma><apos><u0411><apos>:<apos>B<apos><comma><space><apos><u0431><apos>:<apos>b<apos><comma><space><apos><u0412><apos>:<apos>V<apos><comma><space><apos><u0432><apos>:<apos>v<apos><comma><space><apos><u0413><apos>:<apos>G<apos><comma><space><apos><u0433><apos>:<apos>g<apos><comma><space><apos><u0414><apos>:<apos>D<apos><comma><space><apos><u0434><apos>:<apos>d<apos><comma><space><apos><u0415><apos>:<apos>E<apos><comma><space><apos><u0435><apos>:<apos>e<apos><comma><space><apos><u0401><apos>:<apos>E<apos><comma><space><apos><u0451><apos>:<apos>e<apos><comma><space><apos><u0416><apos>:<apos>Zh<apos><comma><space><apos><u0436><apos>:<apos>zh<apos><comma><space><apos><u0417><apos>:<apos>Z<apos><comma><space><apos><u0437><apos>:<apos>z<apos><comma><space><apos><u0418><apos>:<apos>I<apos><comma><space><apos><u0438><apos>:<apos>i<apos><comma><space><apos><u0419><apos>:<apos>Y<apos><comma><space><apos><u0439><apos>:<apos>y<apos><comma><space><apos><u041a><apos>:<apos>K<apos><comma><space><apos><u043a><apos>:<apos>k<apos><comma><space><apos><u041b><apos>:<apos>L<apos><comma><space><apos><u043b><apos>:<apos>l<apos><comma><space><apos><u041c><apos>:<apos>M<apos><comma><space><apos><u043c><apos>:<apos>m<apos><comma><space><apos><u041d><apos>:<apos>N<apos><comma><space><apos><u043d><apos>:<apos>n<apos><comma><space><apos><u041e><apos>:<apos>O<apos><comma><space><apos><u043e><apos>:<apos>o<apos><comma><space><apos><u041f><apos>:<apos>P<apos><comma><space><apos><u043f><apos>:<apos>p<apos><comma><space><apos><u0420><apos>:<apos>R<apos><comma><space><apos><u0440><apos>:<apos>r<apos><comma><space><apos><u0421><apos>:<apos>S<apos><comma><space><apos><u0441><apos>:<apos>s<apos><comma><space><apos><u0422><apos>:<apos>T<apos><comma><space><apos><u0442><apos>:<apos>t<apos><comma><space><apos><u0423><apos>:<apos>U<apos><comma><space><apos><u0443><apos>:<apos>u<apos><comma><space><apos><u0424><apos>:<apos>F<apos><comma><space><apos><u0444><apos>:<apos>f<apos><comma><space><apos><u0425><apos>:<apos>Kh<apos><comma><space><apos><u0445><apos>:<apos>kh<apos><comma><space><apos><u0426><apos>:<apos>Ts<apos><comma><space><apos><u0446><apos>:<apos>ts<apos><comma><space><apos><u0427><apos>:<apos>Ch<apos><comma><space><apos><u0447><apos>:<apos>ch<apos><comma><space><apos><u0428><apos>:<apos>Sh<apos><comma><space><apos><u0448><apos>:<apos>sh<apos><comma><space><apos><u0429><apos>:<apos>Shch<apos><comma><space><apos><u0449><apos>:<apos>shch<apos><comma><space><apos><u042b><apos>:<apos>Y<apos><comma><space><apos><u044b><apos>:<apos>y<apos><comma><space><apos><u042d><apos>:<apos>E<apos><comma><space><apos><u044d><apos>:<apos>e<apos><comma><space><apos><u042e><apos>:<apos>Y<apos><comma><space><apos><u044e><apos>:<apos>y<apos><comma><space><apos><u042f><apos>:<apos>Ya<apos><comma><space><apos><u044f><apos>:<apos>ya<apos><comma><space><apos><u042a><apos>:<quote><apos><quote><comma><space><apos><u044a><apos>:<quote><apos><quote><comma><space><apos><u042c><apos>:<quote><apos><quote><comma><space><apos><u044c><apos>:<quote><apos><quote><closecurly><lf><space><space><space><space><lf><space><space><space><space>#put<space>data<space>to<space><apos>t_Val<apos><lf><space><space><space><space>t_Val=feature.getAttribute<openparen><apos>address<apos><closeparen><lf><space><space><space><space><lf><space><space><space><space>#replace<space>multiple<space>whitespaces<space>with<space>single<lf><space><space><space><space>t_Val=<quote><space><quote>.join<openparen>t_Val.split<openparen><closeparen><closeparen><lf><space><space><space><space><lf><space><space><space><space>#trim<lf><space><space><space><space>t_Val=t_Val.strip<openparen><closeparen><lf><space><space><space><space><lf><space><space><space><space>#<u0417><u0430><u043c><u0435><u043d><u0430><space><u0435><u0451><space><u043f><u043e><u0441><u043b><u0435><space><u044c><u044a><lf><space><space><space><space>t_Val=t_Val.replace<openparen><apos><u044c><u0435><apos><comma><apos>ye<apos><closeparen><lf><lf><space><space><space><space>t_Val=t_Val.replace<openparen><apos><u044c><u0451><apos><comma><apos>ye<apos><closeparen><lf><lf><space><space><space><space>t_Val=t_Val.replace<openparen><apos><u044c><u0401><apos><comma><apos>YE<apos><closeparen><lf><lf><space><space><space><space>t_Val=t_Val.replace<openparen><apos><u044c><u0415><apos><comma><apos>YE<apos><closeparen><lf><lf><space><space><space><space>#<u0417><u0430><u043c><u0435><u043d><u044f><u0435><u043c><space><u0432><space><u0441><u0442><u0440><u043e><u043a><u0435><space><u0415><space><u0438><space><u0401><space><u0434><u043b><u044f><space><u043d><u0430><u0447><u0430><u043b><u043e><space><u0441><u043b><u043e><u0432><u0430><lf><lf><space><space><space><space>str_j=t_Val.split<openparen><apos><space><apos><closeparen><lf><lf><space><space><space><space>t_Val=<apos><apos><lf><lf><space><space><space><space>for<space>item<space>in<space>str_j:<lf><lf><space><space><space><space><space><space><space><space>if<space><openparen>item<openbracket>0<closebracket>==<apos><u0435><apos><space>or<space>item<openbracket>0<closebracket>==<apos><u0451><apos><closeparen>:<lf><lf><space><space><space><space><space><space><space><space><space><space><space><space>t_Val=t_Val+<apos>ye<apos>+item<openbracket>1:<closebracket><lf><lf><space><space><space><space><space><space><space><space>elif<space><openparen>item<openbracket>0<closebracket>==<apos><u0415><apos><space>or<space>item<openbracket>0<closebracket>==<apos><u0401><apos><closeparen>:<lf><lf><space><space><space><space><space><space><space><space><space><space><space><space>t_Val=t_Val+<apos>YE<apos>+item<openbracket>1:<closebracket><lf><lf><space><space><space><space><space><space><space><space>else:<lf><lf><space><space><space><space><space><space><space><space><space><space><space><space>t_Val=t_Val+item<openbracket>:<closebracket><lf><lf><space><space><space><space><space><space><space><space>t_Val=t_Val+<apos><space><apos><lf><lf><space><space><space><space>#<u0420><u0430><u0437><u0431><u0438><u0440><u0430><u0435><u043c><space><u0441><u0442><u0440><u043e><u043a><u0443><lf><lf><space><space><space><space>res=<apos><apos><lf><lf><space><space><space><space>for<space>char<space>in<space>t_Val:<lf><lf><space><space><space><space><space><space><space><space>if<space>has.has_key<openparen>char<closeparen>:<lf><lf><space><space><space><space><space><space><space><space><space><space><space><space>res=res+has<openbracket>char<closebracket><lf><lf><space><space><space><space><space><space><space><space>else:<lf><lf><space><space><space><space><space><space><space><space><space><space><space><space>res=res+char<lf><space><space><space><space><space><space><space><space><space><space><space><space><lf><space><space><space><space>#put<space>data<space>from<space><apos>res<apos><space>to<space>the<space>new<space>attribute<space><space><space><space><space><space><space><space><space><lf><space><space><space><space>feature.setAttribute<openparen><quote>latin_address<quote><comma><space>res<closeparen><lf><space><space><space><space>    OUTPUT PYOUTPUT FEATURE_TYPE PythonCaller_2_OUTPUT
+
+# -------------------------------------------------------------------------
+
+# Assumption is that the workspace temp dir has been already set and created.  See controldefs.cpp - ControlDefs::writeVisualizerTempDir
+DEFAULT_MACRO WORKSPACE_TEMP_DIR
+FACTORY_DEF * InspectorFactory    FACTORY_NAME PythonCaller_2_Output_Prepper    COMMAND_PARM_EVALUATION SINGLE_PASS    INPUT  FEATURE_TYPE PythonCaller_2_OUTPUT    INPUT  FEATURE_TYPE Tester_PASSED    GROUP_ATTRIBUTE __inspector_feature_type_attr__    GROUP_BY    GROUP_ATTRIBUTE_PREFIX PythonCaller_2_Output    RASTER_REDUCTION NoReduction    POINT_CLOUD_REDUCTION NO_THINNING    OUTPUT RESULT FEATURE_TYPE __viewme__
+# Now route all the features into the recorder, changing their
+# feature type to the transformer name so that they view nicely
+
+DEFAULT_MACRO VISUALIZER_FEATURE_FILE $(WORKSPACE_TEMP_DIR)/$(SAFE_FFS_NAME).ffs
+DEFAULT_MACRO VISUALIZER_CREATE_SPATIAL_INDEX NO
+# [PR#45549] The Data Inspector will limit the maximum number of features
+# it reads on WIN32, so we will correspondingly limit the number of
+# features we record here using the MAX_FEATURES_TO_RECORD directive.
+
+FACTORY_DEF * RecorderFactory    FACTORY_NAME PythonCaller_2_Output_Recorder    COMMAND_PARM_EVALUATION SINGLE_PASS    INPUT FEATURE_TYPE __viewme__       _wb_termination_feature Yes       @FeatureType(TERMINATOR_@Value(_wb_termination_xformer))    INPUT FEATURE_TYPE __viewme__       @FeatureType(@Value(__inspector_feature_type_attr__))       @RemoveAttributes(__inspector_feature_type_attr__)    FEATURE_FILE "$(VISUALIZER_FEATURE_FILE)"    STORE_SCANNED_SCHEMA YES    CREATE_SPATIAL_INDEX "$(VISUALIZER_CREATE_SPATIAL_INDEX)"    INSPECTOR "$(VISUALIZER_CREATE_SPATIAL_INDEX)"    FSC_SCHEMA region,varchar<openparen>255<closeparen>,city,varchar<openparen>255<closeparen>,address,varchar<openparen>255<closeparen>,place,varchar<openparen>255<closeparen>,atmType,varchar<openparen>255<closeparen>,openingHours,varchar<openparen>255<closeparen>,cardType,varchar<openparen>255<closeparen>,currency,varchar<openparen>255<closeparen>,cashIn,varchar<openparen>255<closeparen>,exchange,varchar<openparen>255<closeparen>,latitude,varchar<openparen>255<closeparen>,longitude,varchar<openparen>255<closeparen>,latin_address,varchar<openparen>255<closeparen>    MODE RECORD    STORE_SCANNED_METADATA    RECORD_DIRECTLY_TO_DISK YES    MAX_FEATURES_TO_RECORD WIN32 2000000
+
+# -------------------------------------------------------------------------
+
+FACTORY_DEF * RoutingFactory FACTORY_NAME "Destination Feature Type Routing Correlator"   COMMAND_PARM_EVALUATION SINGLE_PASS   INPUT FEATURE_TYPE *   FEATURE_TYPE_ATTRIBUTE __wb_out_feat_type__   OUTPUT ROUTED FEATURE_TYPE *    OUTPUT NOT_ROUTED FEATURE_TYPE __nuke_me__ @Tcl2("FME_StatMessage 818059 [FME_GetAttribute fme_template_feature_type] 818060 818061 fme_warn")
+# -------------------------------------------------------------------------
+
+FACTORY_DEF * TeeFactory   FACTORY_NAME "Final Output Nuker"   INPUT FEATURE_TYPE __nuke_me__
+
+# -------------------------------------------------------------------------
+
+FACTORY_DEF * CreationFactory   CREATE_AT_END   OUTPUT FEATURE_TYPE __NUKEME__   @TCL("if [file exists {$(WORKSPACE_TEMP_DIR)}] {set files [glob -nocomplain -directory  {$(WORKSPACE_TEMP_DIR)} -tails *.ffs];   if {[llength $files] == 1} {    set theFile {$(WORKSPACE_TEMP_DIR)/};   append theFile [lindex $files 0];   eval FME_Execute System \173\042$(FME_HOME_UNIX)/fmedatainspector\042 --visualizer --single-application --delete-on-close --no-source-prompt -f FFS $theFile & \175;  } elseif { [llength $files] == 0 } {  catch { file delete -force {$(WORKSPACE_TEMP_DIR)} };  } else {  set filesNoExt {}; set lastfile {}; foreach {fileName} [lsort $files] { set fileNoExt [string trimright $fileName {.ffs}]; if [regexp {(.*)_[0-9]*$} $fileNoExt wholething fileNoExtBase] {  if { $fileNoExtBase == $lastfile } { continue } }; set lastfile $fileNoExt; lappend filesNoExt $fileNoExt };  eval FME_Execute System \173\042$(FME_HOME_UNIX)/fmedatainspector\042 --visualizer --single-application --delete-on-close --no-source-prompt -d {$(WORKSPACE_TEMP_DIR)} -a ffs -f FFS $filesNoExt & \175; }; }; ")
+FACTORY_DEF * TeeFactory   INPUT FEATURE_TYPE __NUKEME__
