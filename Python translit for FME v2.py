@@ -30,7 +30,7 @@ def Translite(feature):
 
     t_Val=t_Val.replace('ьЕ','YE')
 
-    #Replace in line Е and Ё if they appears in line 
+    #Replace in line Е and Ё if they appears in string 
 
     str_j=t_Val.split(' ')
 
