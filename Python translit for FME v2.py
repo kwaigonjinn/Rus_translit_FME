@@ -29,6 +29,78 @@ def Translite(feature):
     t_Val=t_Val.replace('ьЁ','YE')
 
     t_Val=t_Val.replace('ьЕ','YE')
+    
+    t_Val=t_Val.replace('ае','aye')
+    
+    t_Val=t_Val.replace('Ае','Aye')
+    
+    t_Val=t_Val.replace('АЕ','AYe')
+    
+    t_Val=t_Val.replace('аЕ','aYe')
+    
+    t_Val=t_Val.replace('ее','eye')
+    
+    t_Val=t_Val.replace('Ее','Eye')
+    
+    t_Val=t_Val.replace('ЕЕ','EYe')
+    
+    t_Val=t_Val.replace('еЕ','eYe')
+    
+    t_Val=t_Val.replace('ие','iye')
+    
+    t_Val=t_Val.replace('Ие','Iye')
+    
+    t_Val=t_Val.replace('ИЕ','IYe')
+    
+    t_Val=t_Val.replace('иЕ','iYe')
+    
+    t_Val=t_Val.replace('ое','oye')
+    
+    t_Val=t_Val.replace('Ое','Oye')
+    
+    t_Val=t_Val.replace('ОЕ','OYE')
+    
+    t_Val=t_Val.replace('оЕ','oYe')
+    
+    t_Val=t_Val.replace('уе','uye')
+    
+    t_Val=t_Val.replace('Уе','Uye')
+    
+    t_Val=t_Val.replace('УЕ','UYe')
+    
+    t_Val=t_Val.replace('уЕ','uYe')
+    
+    t_Val=t_Val.replace('ые','yye')
+    
+    t_Val=t_Val.replace('Ые','Yye')
+    
+    t_Val=t_Val.replace('ЫЕ','YYe')
+    
+    t_Val=t_Val.replace('ыЕ','yYe')
+    
+    t_Val=t_Val.replace('эе','eye')
+    
+    t_Val=t_Val.replace('Эе','Eye')
+    
+    t_Val=t_Val.replace('ЭЕ','EYe')
+    
+    t_Val=t_Val.replace('эЕ','eYe')
+    
+    t_Val=t_Val.replace('юе','yuye')
+    
+    t_Val=t_Val.replace('Юе','Yuye')
+    
+    t_Val=t_Val.replace('ЮЕ','YuYe')
+    
+    t_Val=t_Val.replace('юЕ','yuYe')
+    
+    t_Val=t_Val.replace('яе','yaye')
+    
+    t_Val=t_Val.replace('Яе','Yaye')
+    
+    t_Val=t_Val.replace('ЯЕ','YaYe')
+    
+    t_Val=t_Val.replace('яЕ','yaYe')
 
     #Replace in line Е and Ё if they appears in string 
 
